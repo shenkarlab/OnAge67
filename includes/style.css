@@ -1,0 +1,582 @@
+@font-face {
+    font-family: 'Font37-Regular';
+    src: url('Font37-Regular.otf') format("opentype");;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+font-family: Font37-Regular;
+}
+
+header, footer, main, aside, article, section, nav {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.bottomFinish {
+	display: none;
+  	position: fixed;
+  	bottom: 70px;
+  	left:200px;
+  	z-index: 20;
+  	background-image: url(../img/btn-dis.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:100px;
+	height:60px;
+	cursor:pointer;
+}
+
+#about {
+	height: 768px;
+}
+
+#contact_us {
+	position: relative;
+	margin: auto;
+	top: 100px;
+	width: 921px;
+	height: 271px;
+}
+
+#about main {
+	width: 670px;
+	height: 518px;
+	position: relative;
+	margin: auto;
+}
+
+#about footer, #contact footer {
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: 65px;
+	background-color: #c1acab;
+}
+
+#about header, #contact header {
+	position: relative;
+	width:100%;
+	height: 135px;
+	z-index: 20;
+}
+
+#about nav, #contact nav {
+	float: left;
+	position: relative;
+	top: 35px;
+	left: 30px;
+}
+
+#questions nav {
+	float: left;
+	position: relative;
+	width: 200px;
+	top: 35px;
+	left: 30px;
+}
+
+#contact main {
+	width: 100%;
+	height: 568px;
+	position: relative;
+	margin: auto;
+}
+
+#calcalistlogo { 
+	width: 149px;
+	height: 36px;
+	position: relative;
+} 
+
+#shnkarlogo { 
+	width: 152px;
+	height: 49px;
+	position: relative; 
+	left: 364px;
+}
+
+#aboutus {
+	font-family: Font37-Regular;
+	font-size: 28px;
+	position: relative;
+	margin: auto;
+	top: 25px;
+	direction: rtl;
+}
+
+#enjoy {
+	top: 140px;
+	position: relative;
+}
+
+#questions main {
+	left: 0px;
+	top: 0px;
+	position: relative;
+	margin: auto;
+	width: 1024px;
+	height: 648px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#bg_opening {
+	background-color: #f0f0f0;
+}
+
+#bg_opening header {
+	background-color: #39acc1;
+	height: 166px;
+	width: 100%;
+}
+
+#bg_opening nav {
+	font-family: Font37-Regular;
+	font-size: 30px;
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 25px;
+	left: 20px;
+	direction: rtl;
+}
+
+#bg_opening nav a {
+	position: relative;
+	top: 0px;
+	display: inline;
+	color:#000000;
+	text-decoration: none;	
+}
+
+#title {
+	top: 79px; 
+	position: relative; 
+	margin: auto;
+	width: 434px;
+	height: 51px;	
+}
+
+#pig_blue {
+	display: inline;
+	position: relative;
+	left: 16px;
+	width: 96px;
+	height: 109px;
+}
+
+#pigs {
+	position: relative;
+	top: 35px;
+	margin: auto;
+	width: 208px;
+	height: 109px;
+}
+
+#opening_text{
+	position: relative;
+	margin: auto;
+	top: 65px;
+    width: 589px;
+    height: 304px;
+}
+
+#bg_opening main {
+	margin: auto;
+	height: 602px;
+	width: 1024px;
+}
+
+#q_wrapper {
+	top: 50px;
+	width: 1024px;
+	position: relative;
+	right: 10px;
+	height: 59px;
+}
+
+#question {
+	position: relative;
+	margin: auto;
+	height: 59px;
+	font-family: Font37-Regular;
+	font-size: 100px;
+	text-align: center;
+	direction: rtl;
+	z-index: 3;
+}
+
+#circles {
+	position: relative;
+	width: 110px;
+	/*background-color:#0AC2D2;*/
+	margin: auto;
+	top: 130px;
+	z-index:25;
+}
+
+ul {
+	list-style: none;
+	/*position: relative;
+	top: 669px;
+	left: 620px;
+	height: 17px;
+	width: 150px;*/
+}
+
+li {
+	margin-left: 10.5px;
+	float: left;
+	background: url(../img/circle.png);
+	height: 17px;
+	width: 17px;
+	z-index:23;
+}
+
+li.left {
+	margin-left:5px;
+}
+
+li.selected {
+	background: url(../img/layer_1.png);
+}
+
+.clear {
+	clear: both;
+}
+
+#questions footer {
+	position: fixed;
+	background: #c1acab;
+	width: 100%;
+	height: 64px;
+	bottom:0;
+	text-align:center;
+}
+
+
+#footer_container {
+	position: relative;
+	top: 10px;
+	margin: 0 auto;
+	font-family: Font37-Regular;
+	font-size: 40px;
+	color: #FFFFFF;
+	z-index: 20;
+	direction: rtl;
+}
+
+#footer_element {
+	float: left;
+    margin:1pt;
+    width:72pt;
+    height:72pt;
+}
+
+#user_input {
+	position: relative;
+	margin: auto;
+	top: 80px;
+	width: 300px;
+	height: 50px;
+	/*background: #0AC2D2;*/
+}
+
+#small_line {
+	position: relative; 
+	width: 43px;
+	/*top: 10px;*/
+	left:155px;
+	height: 5px;
+	z-index:16;
+}
+
+#line { 
+	position: relative; 
+	width: 132px;
+	top: 15px;
+	left:105px;
+	height: 5px;
+	z-index:16;
+} 
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus {
+    outline:none;
+}
+
+#small_inp {
+	bottom: 72px;
+	left:155px;
+	position: relative; 
+	width: 45px;
+	height: 50px;
+	z-index:17;
+	font-family: Font37-Regular;
+	font-size: 50px;
+	text-align: center;
+	background: transparent;
+    border: none;
+}
+
+#inp_field {
+	bottom: 57px;
+	left:103px;
+	position: relative; 
+	width: 131px;
+	height: 50px;
+	z-index:17;
+	font-family: Font37-Regular;
+	font-size: 50px;
+	text-align: center;
+	background: transparent;
+    border: none;
+}
+
+ #currency { 
+	 /*top: 18px; */
+	bottom: 7px;
+	left: 65px;
+	position: relative; 
+	width: 38px;
+	height: 30px;
+	z-index:15;
+} 
+
+#years {
+	/*top: 22px;*/
+	bottom: 18px;
+	left: 110px;
+	position: relative; 
+	width: 38px;
+	height: 30px;
+	z-index:15;
+}
+
+/*#graphblue 
+{ 
+	 left: 397px; 
+	 top: 273px; 
+	 position: absolute; 
+	 width: 205px;
+	 height: 201px;
+	 z-index:19;
+} */
+
+#icon {
+	position: relative;
+	margin: auto;
+	width: 200px;
+	height: 250px;
+	top: 120px;
+}
+
+#male {
+	display: inline;
+	position: relative;
+	left: 36px;
+	/*top: 183px;*/
+	width:80px;
+	height:91px;
+}
+
+#female {
+	display: inline;
+	position: relative;
+	left: 10px;
+	/*top: 183px;*/
+}
+
+#test {
+	position: relative;
+	top: 213px;
+	background-color: #60D7A9;
+	margin: auto;
+	z-index:50;
+	width: 186px;
+	height: 91px;
+}
+
+/*#next_btn {
+	position: relative;
+	margin: auto;
+	top: 591px;
+	background-color: #7BB7FA;
+}*/
+
+#calc_enabled {
+	background-image: url(../img/to_calc_en.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:250px;
+	height:100px;
+	position: relative;
+	margin: auto;
+	top: 120px;
+	/*left: 620px;
+	top: 591px;*/
+	z-index:20;
+	cursor:pointer;
+}
+
+#calc_disabled {
+	background-image: url(../img/to_calc_dis.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:250px;
+	height:100px;
+	position: relative;
+	margin: auto;
+	top: 120px;
+	/*left: 620px;
+	top: 591px;*/
+	z-index:20;
+	cursor:default;
+}
+
+#bg_opening a {
+	/*background-image: url(../img/start.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;*/
+	display: block;
+	width:100px;
+	height:60px;
+	position: relative;
+	margin: auto;
+	top: 100px;
+	z-index:20;
+	/*cursor:pointer;*/
+}
+
+/*#btn_start {
+	background-image: url(../img/start.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:100px;
+	height:60px;
+	position: relative;
+	margin: auto;
+	top: 100px;
+	/*left: 620px;
+	top: 591px;
+	z-index:20;
+	cursor:pointer;
+}*/
+
+#btn_disabled {
+	background-image: url(../img/btn-dis.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:100px;
+	height:60px;
+	position: relative;
+	margin: auto;
+	top: 120px;
+	cursor:default;
+	/*left: 620px;
+	top: 591px;*/
+	z-index:20;
+}
+
+#btn_enabled {
+	background-image: url(../img/btn-en.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:100px;
+	height:60px;
+	position: absolute;
+	position: relative;
+	margin: auto;
+	top: 120px;
+	z-index:20;
+	cursor:pointer;
+}
+
+#questions header {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	z-index: 19;
+}
+
+#continue {
+	margin-right: 200px;
+	direction: rtl;
+}
+
+#calcQues {
+	direction: rtl;
+	font-family: Font37-Regular;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+#sliderArea {
+	float: right;
+	margin-bottom: 50px;
+}
+
+#result {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 500px;
+	/*background-color: #0A111F;*/
+}
+
+#pension {
+	font-family: Font37-Regular;
+	font-size: 35px;
+	position: relative;
+	margin:auto;
+	top: 100px;
+	width: 200px;
+	height: 50px;
+	font-size: 50px;
+	text-align: center;
+	background-image: url(../img/box_0.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:250px;
+	height:100px;
+}
+
+#assumption {
+	font-family: Font37-Regular;
+	font-size: 35px;
+	position: relative;
+	margin: auto;
+	top: 100px;
+	background-image: url(../img/box.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:250px;
+	height:100px;
+	font-size: 50px;
+	text-align: center;
+	color:#000000;
+}
+
+#slider {
+	width: 600px;
+	margin-right: 120px;
+	margin-top: 50px;
+	font-family: Arial;
+}

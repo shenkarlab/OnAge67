@@ -1,0 +1,120 @@
+{
+	"user":{
+		"gender": 1, 
+		"assumption_pens": 0, 
+		"salary": 10000, 
+		"pre_years": 10,
+		"pension": 0,
+		"years":30,
+		"final_salary":10000,
+		"savings":0,
+		"rate":4,
+		"year_mng":0.5,
+		"month_mng":6,
+		"pens_rate":17.5,
+		"salary_rate":0,
+		"withdraw":0
+	},
+	"calculator_scales": [
+		{
+			"male_q":"מהי ההכנסה החודשית שלך?",
+			"female_q":"מהי ההכנסה החודשית שלך?",
+			"is_fixed": false,
+			"min_val": 5000,
+			"max_val":100000,
+			"default":10000,
+			"steps":100,
+			"prefix":"₪"
+		},
+		{
+			"male_q":"כמה שנים לדעתך עוד תמשיך לחסוך לפנסיה?",
+			"female_q":"כמה שנים לדעתך עוד תמשיכי לחסוך לפנסיה?",
+			"is_fixed": false,
+			"min_val": 0,
+			"max_val":80,
+			"default":30,
+			"steps":1,
+			"prefix":""
+		},
+		{
+			"male_q":"מה לדעתך יהיה השכר שלך רגע לפני שתפרוש לפנסיה?",
+			"female_q":"מה לדעתך יהיה השכר שלך רגע לפני שתפרשי לפנסיה?",
+			"is_fixed": false,
+			"min_val":5000,
+			"max_val":100000,
+			"default":10000,
+			"steps": 100,
+			"prefix":"₪"
+		},
+		{
+			"male_q":"איזה אחוז מהשכר אתה מפקיד לפנסיה כל חודש?",
+			"female_q":"איזה אחוז מהשכר את מפקידה לפנסיה כל חודש?",
+			"is_fixed": true,
+			"min_val":5.5,
+			"max_val":7,
+			"default":0,
+			"values": [5.5, 6, 7],
+			"prefix":"%"
+		},
+		{
+			"male_q":"איזה אחוז מהשכר המעסיק שלך מפקיד כל חודש לפנסיה שלך",
+			"female_q":"איזה אחוז מהשכר המעסיק שלך מפקיד כל חודש לפנסיה שלך",
+			"is_fixed": true,
+			"min_val":11,
+			"max_val":14.33,
+			"default":1,
+			"values": [11, 12, 14.33],
+			"prefix":"%"
+		},
+		{
+			"male_q":"מהי התשואה השנתית?",
+			"female_q":"מהי התשואה השנתית?",
+			"is_fixed": false,
+			"min_val":0,
+			"max_val":7,
+			"default":4,
+			"steps":1,
+			"prefix":"%"
+		},
+		{
+			"male_q":"כמה פעמים משכת את כספי הפיצויים?",
+			"female_q":"כמה פעמים משכת את כספי הפיצויים?",
+			"is_fixed": false,
+			"min_val":0,
+			"max_val":4,
+			"default":0,
+			"steps": 1,
+			"prefix":""
+		},
+		{
+			"male_q":"כמה דמי ניהול אתה משלם על כל הפקדה חודשית?",
+			"female_q":"כמה דמי ניהול את משלמת על כל הפקדה חודשית?",
+			"is_fixed": false,
+			"min_val":0,
+			"max_val":6,
+			"default":6,
+			"steps": 0.1,
+			"prefix":"%"
+		},
+		{
+			"male_q":"כמה דמי ניהול שנתיים אתה משלם על סך החיסכון המצטבר?",
+			"female_q":"כמה דמי ניהול שנתיים את משלמת על סך החיסכון המצטבר?",
+			"is_fixed": false,
+			"min_val":0,
+			"max_val":0.5,
+			"default":0.5,
+			"steps": 0.1,
+			"prefix":"%"
+		},
+		{
+			"male_q":"כמה כסף הצלחת לחסוך לפנסיה עד היום?",
+			"female_q":"כמה כסף הצלחת לחסוך לפנסיה עד היום?",
+			"is_fixed": false,
+			"min_val":0,
+			"max_val":1000000,
+			"default":50000,
+			"steps": 1000,
+			"prefix":"₪"
+		}
+	] 
+}
