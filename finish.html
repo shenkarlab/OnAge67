@@ -3,6 +3,13 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="includes/style.css">
+		
+		<!-- jQuery library -->
+		<script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
+		
+		<!-- controller and calculator scripts -->
+		<script type="text/javascript" src="includes/controller.js"></script>
+		<script type="text/javascript" src="includes/calculator.js"></script>
 		<title>כשתהיו בני 67</title>
 	</head>
 	<body id="about">
@@ -11,19 +18,21 @@
 				<section id="links">
 					<a href="contact.html"><img src="img/contact.jpg"></a>
 					<img src="img/sep.jpg">
-					<a href="#"><img src="img/about.jpg"></a>
+					<a href="about.html"><img src="img/about.jpg"></a>
 					<img src="img/sep.jpg">
 					<a href="index.html"><img src="img/calculator.jpg"></a>
 				</section>
 			</nav>
 		</header>
 		<main>
-			<section id="finish_pension"></section>
-			<section id="finish_assumption"></section>
-			<section id="aboutus">
-				שאלות מנחות כשלב ראשון ומשחק עם הנתונים בשלב השני תוכלו לקבל תמונת מצב לגבי הפנסיה שלכם. כשלב שלישי לאחר קבלת תמונת המצב, המחשבון ימליץ כיצד להגדיל את החיסכון לקראת הפנסי
-			</section>
+			<section id="result_bar"></section>
+			<section id="center_txt"></section>
 		</main>
 		<footer></footer>
+		<script>
+			(function() {
+				generateResult();
+			})();
+		</script>
 	</body>
 </html>

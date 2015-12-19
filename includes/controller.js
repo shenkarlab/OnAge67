@@ -51,6 +51,7 @@ var loadCalculator = function() {
 			  if (y > 500) {
 			    $('.bottomFinish').fadeIn('fast');
 			    $('.bottomFinish').click(function() {
+			    	setUserProperty("result_pens", pens_finite);
 					window.location.href = 'finish.html';
 				});
 			  }
@@ -150,7 +151,6 @@ var nextEnabled = function() {
 		$('#next_btn').html(btn_enabled);
 		$("#next_btn").click(function() {
 			screen++;
-			saveUser();
 			setScreen();
 		});
 		nextEnable = 1;
@@ -180,27 +180,12 @@ var incrementCircles = function() {
 	}
 };
 
-var loadUser = function() {
-	$('document').ready(function() {
-		$.getJSON("includes/data.json", function(data) {
-			user_prop = data["user"];
-			console.log(user_prop);
-		});
-	});
-};
-
 var setUserProperty = function(property, value) {
 	localStorage.setItem(property, value);
-	console.log("property: "+property+ " = "+localStorage.getItem(property));
 };
 
 var getUserProperty = function(property) {
 	return localStorage.getItem(property);
-};
-
-var saveUser = function() {
-	/*localStorage.setItem("gender",user_prop["gender"]);
-	console.log("user prop from storage: "+localStorage.getItem("gender"));*/
 };
 
 var getUserGender = function() {
@@ -328,7 +313,6 @@ var getUserYears = function() {
         });
 	    $('#user_input').fadeIn('slow');
 	});
-	console.log("ass: "+user_prop["assumption_pens"]);
 	$('footer').html('<div id="footer_container"><img src="img/arrow_r.png">'+localStorage.getItem("assumption_pens")+' שח<img src="img/arrow_l.png"></div>');
 
 };
@@ -337,34 +321,62 @@ var goToCalculator = function() {
 	window.location.href = 'calculator.html';
 };
 
+var loadQuestions = function() {
+	
+};
+
 var setScreen = function() {
-	loadUser();
 	incrementCircles();
-	console.log("screen:"+screen);
 	switch(screen){
 		case 1:
 			getUserAssumption();
 			break;
 		case 2:
 			var assumption = parseInt($('#inp_field').val());
-			//user_prop["assumption_pens"] = assumption;
 			setUserProperty("assumption_pens",assumption);
 			getUserSalary();
 			break;
 		case 3:
 			var salary = parseInt($('#inp_field').val());
 			setUserProperty("salary",salary);
-			//user_prop["salary"] = salary;
 			getUserYears();
 			break;
 		case 4:
 			var years = parseInt($('#small_inp').val());
 			setUserProperty("pre_years",years);
-			//user_prop["years"] = years;
 			goToCalculator();
 			break;
 		default:
 			getUserGender();
 			break;
 	}
+};
+
+var generateResult = function() {
+	var diff = Number(Number(getUserProperty("assumption_pens")) - Number(getUserProperty("result_pens")));
+	$('document').ready(function() {
+		$.getJSON("includes/data.json", function(data) {
+			var resp_txt;
+			if(diff > 0) {
+				$('#result_bar').html('<section id="pens_lower"><section id="result_text_pens"></section></section>'+
+										'<section id="assump_higher"><section id="result_text_assump"></section></section>');
+				if(getUserProperty("gender") == Gender.MALE) {
+					resp_txt = data["response"][0]["text_male"];	
+				} else {
+					resp_txt = data["response"][0]["text_female"];	
+				}
+			} else {
+				$('#result_bar').html('<section id="pens_higher"><section id="result_text_pens"></section></section>'+
+										'<section id="assump_lower"><section id="result_text_assump"></section></section>');
+				if(getUserProperty("gender") == Gender.MALE) {
+					resp_txt = data["response"][1]["text_male"];	
+				} else {
+					resp_txt = data["response"][1]["text_female"];
+				}
+			}
+			$('#result_text_pens').html(getUserProperty("result_pens"));
+			$('#result_text_assump').html(getUserProperty("assumption_pens"));
+			$('#center_txt').html(resp_txt);
+		});
+	});
 };
