@@ -5,6 +5,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'poeti';
+    src: url('poeti-aaa-regular.otf') format("opentype");;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poeti-bold';
+    src: url('poeti-aaa-bold.otf') format("opentype");;
+    font-weight: normal;
+    font-style: normal;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -21,6 +34,7 @@ header, footer, main, aside, article, section, nav {
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #FFFFFF;
 }
 
 .bottomFinish {
@@ -466,66 +480,6 @@ input:focus {
 	direction: rtl;
 }
 
-#calcQues {
-	direction: rtl;
-	font-family: Font37-Regular;
-	font-size: 35px;
-	margin-bottom: 10px;
-}
-
-#sliderArea {
-	float: right;
-	margin-bottom: 50px;
-}
-
-#result {
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 500px;
-}
-
-#pension {
-	font-family: Font37-Regular;
-	font-size: 35px;
-	position: relative;
-	margin:auto;
-	top: 100px;
-	width: 200px;
-	height: 50px;
-	font-size: 50px;
-	text-align: center;
-	background-image: url(../img/box_0.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-}
-
-#assumption {
-	font-family: Font37-Regular;
-	font-size: 35px;
-	position: relative;
-	margin: auto;
-	top: 100px;
-	background-image: url(../img/box.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-	font-size: 50px;
-	text-align: center;
-	color:#000000;
-}
-
-#slider {
-	width: 600px;
-	margin-right: 120px;
-	margin-top: 50px;
-	font-family: Arial;
-}
-
 #result_bar {
 	position: relative;
 	margin: auto;
@@ -579,4 +533,408 @@ input:focus {
 	font-size: 35px;
 	text-align: center;
 	width: 150px;
+}
+
+/* desktop */
+@media (min-width: 851px) {
+	#wrapper {
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	/* seperator line*/
+	.hrLine {
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 80%;
+	}
+	
+	/* Shaul's logo */
+	#shaul {
+		margin: auto;
+		width:300px;
+		height:321px;
+	}
+	
+	#shauPic {
+		margin: auto;
+		background-image: url(../img/shaul_big.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 240px;
+		width: 206px;
+	}
+	
+	#shaulTxt {
+		margin: auto;
+		background-image: url(../img/logo_big_txt.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 69px;
+		width: 131px;
+	}
+	
+	/* calculator design */
+	
+	/* logo container */
+	
+	#logoContainerCalc {
+		width:300px;
+		height:321px;
+		position: relative;
+		margin: auto;
+		top: 160px;	
+	}
+	
+	/* results box */
+	
+	/* results container */
+	#resultsContainer {
+		position: relative;
+		margin: auto;
+		border-radius: 10px;
+		top: 120px;
+		height: 159px;
+		width: 80%;
+		background-color:#BF1067;
+	}
+	
+	/* assumption part container */
+	#assumpContainer {
+		position: relative;
+		float: right;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		/*border-radius: 10px;
+		top: 100px;*/
+		height: 159px;
+		background-color:#ffffff;
+	}
+	
+	/* assumption part title */
+	#assumpTlt {
+		position: relative;
+		top: 15px;
+		text-align: center;
+		font-family: 'poeti';
+		font-size: 1.5vw;
+		color: #BF1067;
+	}
+	
+	/* pension text container */
+	#assumpTxtContainer {
+		position: absolute;
+		margin: auto;
+	    bottom:0px; 
+	    margin-bottom: 20px;
+	    padding-top: 0px;
+		text-align: center;
+		font-family: 'poeti-bold';
+		font-size: 2.5vw;
+		color: #BF1067;
+		width:100%
+	}
+	
+	/* pension text */
+	#assumpTxt {
+		position: relative;
+		display:inline;
+	}
+	
+	#pensionContainer {
+		position: relative;
+		float: right;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		/*border-radius: 10px;
+		top: 100px;*/
+		height: 159px;
+		background-color:#BF1067;
+	}
+	
+	/* assumption part title */
+	#pensionTlt {
+		position: relative;
+		top: 15px;
+		text-align: center;
+		font-family: 'poeti';
+		font-size: 1.5vw;
+		color: #ffffff;
+	}
+	
+	/* pension text container */
+	#pensionTxtContainer {
+		position: absolute;
+		margin: auto;
+	    bottom:0px; 
+	    margin-bottom: 20px;
+	    padding-top: 0px;
+		text-align: center;
+		font-family: 'poeti-bold';
+		font-size: 2.5vw;
+		color: #ffffff;
+		width:100%
+	}
+	
+	/* pension text */
+	#pensionTxt {
+		position: relative;
+		display:inline;
+	}
+	
+	.bigger {
+		width: 60%;
+	}
+	.smaller {
+		width: 40%;
+	}
+	
+	#resultsArrow {
+		position: relative;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 44px;
+		height: 44px;
+		margin: auto;
+		top: 137px;
+	}
+	
+	.whiteArrow {
+		background-image: url(../img/arrow_white.png);
+	}
+	
+	.pinkArrow {
+		background-image: url(../img/arrow_pink.png);
+	}
+
+	/* container for all sliders */
+	#sliderContainer {
+		position: relative;
+		width: 100%;
+	}
+	/* major calc question text */
+	.questionContainer {
+		position: relative;
+		width: 100%;
+		height: 40px;
+	}
+	.calcQues {
+		position: relative;
+		float: right;
+		width: 50%;
+		direction: rtl;
+		text-align:right;
+		font-family: 'poeti-bold';
+		color:#BF1067;
+		font-size: 2vw;
+		margin-bottom: 10px;
+	}
+	
+	.expContainer {
+		position: relative;
+		width: 100%;
+		height: 100px;
+	}
+	/* question explanation text */
+	.calcExp {
+		position: relative;
+		float: right;
+		width: 70%;
+		direction: rtl;
+		text-align:right;
+		font-family: 'poeti';
+		color:#434141;
+		font-size: 1.5vw;
+		margin-bottom: 10px;
+	}	
+	/* define slider positions */
+	.slider {
+		position: relative;
+		margin: 0 auto;
+		width: 75%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		font-family: Arial;
+		}
+	/* container for all sliders */
+	#sliders {
+		position: relative;
+		top: 50px;
+		float: right;
+		width: 65.625%;
+	}
+	/* results area */
+	#result {
+		position: fixed;
+		/*left: 0;*/
+		top: 0;
+		bottom: 0;
+		width: 34.375%;
+		height: 100%;
+		background-color:#24a499;
+	}
+}
+
+/* tablet */
+@media (max-width: 850px) and (min-width:591px) {
+	/* seperator line*/
+	.hrLine {
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 80%;
+	}
+	/* container for all sliders */
+	#sliderContainer {
+		position: relative;
+		width: 100%;
+	}
+	/* results area */
+	#result {
+		position: fixed;
+		z-index: 10000;
+		/*left: 0;
+		top: 0;
+		bottom: 0;*/
+		top:0px;
+		width: 100%;
+		height: 200px;
+		background-color:#24a499;
+	}
+	
+	/* container for all sliders */
+	#sliders {
+		position: relative;
+		top: 220px;
+		float: right;
+		width: 100%;
+	}
+	
+	/* major calc question text */
+	.questionContainer {
+		position: relative;
+		width: 100%;
+		height: 40px;
+	}
+	.calcQues {
+		position: relative;
+		float: right;
+		width: 50%;
+		direction: rtl;
+		text-align:right;
+		font-family: 'poeti-bold';
+		color:#BF1067;
+		font-size: 4vw;
+		margin-bottom: 10px;
+	}
+	.expContainer {
+		position: relative;
+		width: 100%;
+		height: 140px;
+	}
+	/* question explanation text */
+	.calcExp {
+		position: relative;
+		float: right;
+		width: 70%;
+		direction: rtl;
+		text-align:right;
+		font-family: 'poeti';
+		color:#434141;
+		font-size: 3vw;
+		margin-bottom: 10px;
+	}
+	/* define slider positions */
+	.slider {
+		position: relative;
+		margin: 0 auto;
+		width: 75%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: Arial;
+	}
+}
+
+/* mobile*/
+@media (max-width: 590px) {
+	/* seperator line*/
+	.hrLine {
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 80%;
+	}
+	/* container for all sliders */
+	#sliderContainer {
+		position: relative;
+		width: 100%;
+	}
+	/* results area */
+	#result {
+		position: fixed;
+		z-index: 10000;
+		/*left: 0;
+		top: 0;
+		bottom: 0;*/
+		top:0px;
+		width: 100%;
+		height: 200px;
+		background-color:#24a499;
+	}
+	
+	/* container for all sliders */
+	#sliders {
+		position: relative;
+		top: 220px;
+		float: right;
+		width: 100%;
+	}
+	
+	/* major calc question text */
+	.questionContainer {
+		position: relative;
+		width: 100%;
+		height: 40px;
+	}
+	.calcQues {
+		position: relative;
+		float: right;
+		width: 50%;
+		direction: rtl;
+		text-align:right;
+		font-family: 'poeti-bold';
+		color:#BF1067;
+		font-size: 5vw;
+		margin-bottom: 10px;
+	}
+	.expContainer {
+		position: relative;
+		width: 100%;
+		height: 170px;
+	}
+	/* question explanation text */
+	.calcExp {
+		position: relative;
+		float: right;
+		width: 70%;
+		direction: rtl;
+		text-align:right;
+		font-family: 'poeti';
+		color:#434141;
+		font-size: 4vw;
+		margin-bottom: 10px;
+	}
+	/* define slider positions */
+	.slider {
+		position: relative;
+		margin: 0 auto;
+		width: 75%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: Arial;
+	}
 }

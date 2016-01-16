@@ -6,6 +6,13 @@
 /* =====================================================================================================================
 // Skin details */
 
+@font-face {
+    font-family: 'poeti';
+    src: url('poeti-aaa-regular.otf') format("opentype");;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .irs-line-mid,
 .irs-line-left,
 .irs-line-right,
@@ -66,23 +73,25 @@
 }
 
 .irs-min, .irs-max {
-    color: #999;
-    font-size: 10px; line-height: 1.333;
+    color: #24a499;
+    font-size: 18px; line-height: 1.333;
     text-shadow: none;
     top: 0; padding: 1px 3px;
-    background: #e1e4e9;
+    background: #FFFFFF;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    font-family: 'poeti';
 }
 
 .irs-from, .irs-to, .irs-single {
     color: #fff;
-    font-size: 10px; line-height: 1.333;
+    font-size: 15px; line-height: 1.333;
     text-shadow: none;
     padding: 1px 5px;
-    background: #ed5565;
+    background: #bf1067;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    font-family: 'poeti';
 }
 .irs-from:after, .irs-to:after, .irs-single:after {
     position: absolute; display: block; content: "";
@@ -91,7 +100,7 @@
     margin-left: -3px;
     overflow: hidden;
     border: 3px solid transparent;
-    border-top-color: #ed5565;
+    border-top-color: #bf1067;
 }
 
 

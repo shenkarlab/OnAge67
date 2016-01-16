@@ -27,15 +27,17 @@ var loadCalculator = function() {
 			values = new Array(calculator_params.length);
 			for (var i = 0; i < calculator_params.length; i++) {
 				var id = "range"+i;
-				var sHTML = '<div id="slider"><div id="calcQues">';
+				var sHTML = '<section class="slider"><section class="questionContainer"><section class="calcQues">';
 				if(gender == Gender.MALE) {
 					sHTML += calculator_params[i]["male_q"];
 				} else if (gender == Gender.FEMALE) {
 					sHTML += calculator_params[i]["female_q"];
 				}
-				sHTML += '</div><input type="text" id="'+id+'" value="" name="range" /></div>';
+				sHTML += '</section></section><section class="expContainer"><section class="calcExp">';
+				sHTML += calculator_params[i]["exp"];
+				sHTML += '</section></section><input type="text" id="'+id+'" value="" name="range"></section><section class="hrLine"></section>';
 				var slider = $(sHTML);
-				$("#sliderArea").append(slider);
+				$("#sliders").append(slider);
 				
 				if(calculator_params[i]["is_fixed"]) {
 					createFixedSlider(i, calculator_params[i]);
@@ -380,3 +382,14 @@ var generateResult = function() {
 		});
 	});
 };
+
+
+//$('#elementID').html(commaSeparateNumber(1234567890));
+var commaSeparateNumber = function(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+};
+
+//resize text function!
