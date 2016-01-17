@@ -18,7 +18,8 @@ var values;
 var user_prop;
 
 var loadCalculator = function() {
-	$('#assumption').html("₪ "+(getUserProperty("assumption_pens")));
+	var assumption_val = commaSeparateNumber(getUserProperty("assumption_pens"));
+	$('#assumpTxt').html(assumption_val);
 	var gender = getUserProperty("gender");
 	$('document').ready(function() {
 		$.getJSON("includes/data.json", function(data) {
@@ -45,10 +46,16 @@ var loadCalculator = function() {
 					createSlider(i, calculator_params[i]);	
 				}
 			}
+			var btn = '<section class="continueBtn"><section class="continueBtnTxt">עבור לתוצאות המחשבון</section></section>';
+			$("#sliders").append(btn);
+			$('.continueBtn').click(function() {
+			   	setUserProperty("result_pens", pens_finite);
+				window.location.href = 'finish.html';
+			});
 			getParams();
 			calculate();
 		});
-		$(document).scroll(function() {
+		/* $(document).scroll(function() {
 			  var y = $(this).scrollTop();
 			  if (y > 500) {
 			    $('.bottomFinish').fadeIn('fast');
@@ -57,7 +64,7 @@ var loadCalculator = function() {
 					window.location.href = 'finish.html';
 				});
 			  }
-		});
+		}); */
 	});
 };
 
@@ -383,6 +390,31 @@ var generateResult = function() {
 	});
 };
 
+var resizeResultContainer = function(pension) {
+	var assumption_val = commaSeparateNumber(getUserProperty("assumption_pens"));
+	if(assumption_val.length > 7 && $('#assumpContainer').hasClass('smaller')) {
+		$('#pensionTxtContainer').removeClass();
+		$('#pensionTxtContainer').addClass('smallTxt');
+	} else {
+		$('#pensionTxtContainer').removeClass();
+		$('#pensionTxtContainer').addClass('regularTxt');
+	}
+	if(Number(getUserProperty("assumption_pens")) < Number(pension)) {
+		$('#assumpContainer').removeClass();
+		$('#assumpContainer').addClass('smaller');
+		$('#pensionContainer').removeClass();
+		$('#pensionContainer').addClass('bigger');
+		$('#resultsArrow').removeClass();
+		$('#resultsArrow').addClass('pinkArrow');
+	} else {
+		$('#assumpContainer').removeClass();
+		$('#assumpContainer').addClass('bigger');
+		$('#pensionContainer').removeClass();
+		$('#pensionContainer').addClass('smaller');
+		$('#resultsArrow').removeClass();
+		$('#resultsArrow').addClass('whiteArrow');
+	}
+};
 
 //$('#elementID').html(commaSeparateNumber(1234567890));
 var commaSeparateNumber = function(val){

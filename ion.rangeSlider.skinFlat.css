@@ -61,14 +61,14 @@
     }
 
 .irs-bar {
-    height: 10px; top: 25px;
+    height: 12px; top: 25px;
     background-position: 0 -60px;
     border-top: 2px solid #24A499;
     border-bottom: 2px solid #24A499;
 }
     .irs-bar-edge {
         top: 25px;
-        height: 10px; width: 9px;
+        height: 12px; width: 9px;
         background-position: 0 -90px;
         border-left: 2px solid #24A499;
         border-top: 2px solid #24A499;

@@ -121,11 +121,26 @@ function calculate() {
 	total_with_mng = total_with_mng.toFixed(0);
 	var all = Number(Number(total_with_mng) + Number(acc_savings_neto));
 	var gender = localStorage.getItem("gender");
+	var val = 0;
 	if(gender == Gender.MALE) {
 		pens_finite = (all / 200).toFixed(0);
-		$('#pension').html("₪ "+(all / 200).toFixed(0));
+		// $('#pension').html("₪ "+(all / 200).toFixed(0));
+		val = (all / 200).toFixed(0);
+		$('#pensionTxt').html(val);	
 	} else {
 		pens_finite = (all / 220).toFixed(0);
-		$('#pension').html("₪ "+(all / 220).toFixed(0));
+		val = (all / 220).toFixed(0);
+		// $('#pension').html("₪ "+(all / 220).toFixed(0));
+		//$('#pensionTxt').html(commaSeparateNumber((all / 220).toFixed(0)));
 	}
+	var val_str = commaSeparateNumber(val);
+	if(val_str.length > 7 && $('#pensionContainer').hasClass('smaller')) {
+		$('#pensionTxtContainer').removeClass();
+		$('#pensionTxtContainer').addClass('smallTxt');
+	} else {
+		$('#pensionTxtContainer').removeClass();
+		$('#pensionTxtContainer').addClass('regularTxt');
+	}
+	$('#pensionTxt').html(val_str);
+	resizeResultContainer(val);
 }
