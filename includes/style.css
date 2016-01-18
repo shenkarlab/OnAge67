@@ -1,5 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, footer, main, aside, article, section, nav {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
 h1 {
-	font-family: 'poeti';
+	font-family: poeti-aaa-regular;
 }
 
 .bottomFinish {
@@ -119,24 +134,6 @@ h1 {
 	width: 434px;
 	height: 51px;	
 }
-
-#pig_blue {
-	display: inline;
-	position: relative;
-	left: 16px;
-	width: 96px;
-	height: 109px;
-}
-
-#pigs {
-	position: relative;
-	top: 35px;
-	margin: auto;
-	width: 208px;
-	height: 109px;
-}
-
-
 
 #question {
 	position: relative;
@@ -505,7 +502,7 @@ input:focus {
 
 
 
-#bg_opening #topRight{
+#topRight{
 	position: relative;
     top: 185px;
     text-align: center;
@@ -515,19 +512,12 @@ input:focus {
     margin: auto;
 }
 
-#bg_opening #shaul{
+#shaulAll{
+	margin: auto;
 	position: relative;
     top: 340px;
     width: 206px;
     height: 240px;
-}
-
-#bg_opening #bottomSideText{
-	position: relative;
-	left: 149px;
-    top: 594px;
-    width: 131px;
-    height: 69px;
 }
 
 #right{
@@ -545,7 +535,7 @@ input:focus {
     height: 768px;
 }
 
-#bg_opening nav {
+nav {
 	font-family: 'poeti';
     font-size: 30px;
     text-align: center;
@@ -556,7 +546,8 @@ input:focus {
     direction: rtl;
 }
 
-#bg_opening #entrance{
+
+#bStart #entrance{
 	margin: auto;
 	direction: rtl;
     text-align: center;
@@ -569,7 +560,33 @@ input:focus {
     height: 141px;
 }
 
-#bg_opening #presentation{
+#bIndex #entrance {
+    margin: auto;
+    direction: rtl;
+    text-align: center;
+    font-family: 'poeti-bold';
+    color: #BF1067;
+    font-size: 7.48vw;
+    top: 159px;
+    position: relative;
+    width: 436px;
+    height: 141px;
+}
+
+#bIndex #presentation{
+	margin: auto;
+	direction: rtl;
+    text-align: center;
+    font-family: 'poeti';
+	font-size: 1.8vw;
+    top: 160px;
+    position: relative;
+    width: 450px;;
+    height: 141px;
+    color: #555454;
+}
+
+#bStart #presentation{
 	margin: auto;
 	direction: rtl;
     text-align: center;
@@ -581,15 +598,6 @@ input:focus {
     height: 141px;
     color: #555454;
 }
-/*
-#bg_opening #kerenText{
-	left: 209px;
-    top: 126px;
-    position: relative;
-    width: 442px;
-    height: 187px;
-    z-index: 7;
-}*/
 
 #btnback_start{
 	margin: auto;
@@ -640,18 +648,11 @@ input:focus {
     height: 44px;
 }
 
-
-#bg_opening a {
-	display: block;
+.oNav a{
 	width:100px;
 	height:60px;
-	position: relative;
 	margin: auto;
 	top: 100px;
-	z-index:20;
-}
-
-#bg_opening nav a {
 	font-family: 'poeti';
 	position: relative;
 	top: 0px;
@@ -660,6 +661,10 @@ input:focus {
 	text-decoration: underline;
 	font-size: 1.5vw;
 }
+
+#bOpenConc a{
+	color: #BF1067;
+} 
 
 
 @font-face {
@@ -683,22 +688,11 @@ input:focus {
     font-style: normal;
 }
 
-* {
+#bOpenConc{
 	margin: 0;
 	padding: 0;
+	background-color: #24a499;
 }
-
-
-header, footer, main, aside, article, section, nav {
-	display: block;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #FFFFFF;
-}
-
 .bottomFinish {
 	display: none;
   	position: fixed;
@@ -723,13 +717,6 @@ body {
 	top: 100px;
 	width: 921px;
 	height: 271px;
-}
-
-#about main {
-	width: 670px;
-	height: 518px;
-	position: relative;
-	margin: auto;
 }
 
 #about footer, #contact footer {
@@ -807,16 +794,6 @@ body {
 	z-index: 0;
 }
 
-#bg_opening {
-	background-color: #f0f0f0;
-}
-
-#bg_opening header {
-	background-color: #39acc1;
-	height: 166px;
-	width: 100%;
-}
-
 #title {
 	top: 79px; 
 	position: relative; 
@@ -831,12 +808,6 @@ body {
 	top: 65px;
     width: 589px;
     height: 304px;
-}
-
-#bg_opening main {
-	margin: auto;
-	height: 602px;
-	width: 1024px;
 }
 
 #q_wrapper {
@@ -1056,16 +1027,6 @@ input:focus {
 	top: 120px;
 	z-index:20;
 	cursor:default;
-}
-
-#bg_opening a {
-	display: block;
-	width:100px;
-	height:60px;
-	position: relative;
-	margin: auto;
-	top: 100px;
-	z-index:20;
 }
 
 #btn_disabled {
