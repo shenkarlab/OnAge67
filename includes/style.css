@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'poeti';
+    src: url('poeti-aaa-regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poeti-bold';
+    src: url('poeti-aaa-bold.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,24 +25,6 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #f0f0f0;
-}
-
-h1 {
-	font-family: poeti-aaa-regular;
-}
-
-.bottomFinish {
-	display: none;
-  	position: fixed;
-  	bottom: 70px;
-  	left:200px;
-  	z-index: 20;
-  	background-image: url(../img/btn-dis.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:100px;
-	height:60px;
-	cursor:pointer;
 }
 
 #about {
@@ -618,16 +614,6 @@ nav {
 	padding-top: 10px;
 }
 
-
-/*#btn_start{
-	margin-left: 145px;
-	background-image: url(../img/layer_13.png);
-    position: relative;
-    width: 149px;
-    height: 51px;
-    z-index: 13;
-}*/
-
 #lower_text{
 	margin: auto;
     font-family: 'poeti';
@@ -665,28 +651,6 @@ nav {
 #bOpenConc a{
 	color: #BF1067;
 } 
-
-
-@font-face {
-    font-family: 'Font37-Regular';
-    src: url('Font37-Regular.otf') format("opentype");;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'poeti';
-    src: url('poeti-aaa-regular.otf') format("opentype");;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'poeti-bold';
-    src: url('poeti-aaa-bold.otf') format("opentype");;
-    font-weight: normal;
-    font-style: normal;
-}
 
 #bOpenConc{
 	margin: 0;
@@ -1126,8 +1090,32 @@ input:focus {
 /* desktop */
 @media (min-width: 851px) {
 	#wrapper {
-		width: 95%;
+		width: 100%;
 		margin: 0 auto;
+	}
+	
+	/* continue to results button */
+	.continueBtn {
+		position: relative;
+		margin: 0 auto;
+		top: 30px;
+		margin-bottom: 30px;
+		width: 70%;
+		height: 96px;
+		background-color:#BF1067;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 8px 6px -6px #8e8c8c;
+		cursor: pointer;
+	}
+	
+	.continueBtnTxt {
+		position: relative;
+		margin: auto;
+		top: 20px;
+		font-size: 4vw;
+		font-family:'poeti-bold';
+		color:#FFFFFF;
 	}
 	
 	/* seperator line*/
@@ -1173,7 +1161,7 @@ input:focus {
 		height:321px;
 		position: relative;
 		margin: auto;
-		top: 160px;	
+		top: 140px;	
 	}
 	
 	/* results box */
@@ -1183,7 +1171,7 @@ input:focus {
 		position: relative;
 		margin: auto;
 		border-radius: 10px;
-		top: 120px;
+		top: 100px;
 		height: 159px;
 		width: 80%;
 		background-color:#BF1067;
@@ -1261,7 +1249,6 @@ input:focus {
 	    padding-top: 0px;
 		text-align: center;
 		font-family: 'poeti-bold';
-		font-size: 2.5vw;
 		color: #ffffff;
 		width:100%
 	}
@@ -1271,7 +1258,12 @@ input:focus {
 		position: relative;
 		display:inline;
 	}
-	
+	.smallTxt {
+		font-size:2vw;
+	}
+	.regularTxt{
+		font-size:2.5vw;
+	}
 	.bigger {
 		width: 60%;
 	}
@@ -1344,7 +1336,6 @@ input:focus {
 		width: 75%;
 		margin-top: 50px;
 		margin-bottom: 50px;
-		font-family: Arial;
 		}
 	/* container for all sliders */
 	#sliders {
@@ -1367,6 +1358,191 @@ input:focus {
 
 /* tablet */
 @media (max-width: 850px) and (min-width:591px) {
+	#resultsWrapper {
+		position:relative;
+		width:549.5px;
+		height: 200px;
+		margin: 0 auto;
+	}
+	
+	/* logo container */
+	#logoContainerCalc {
+		float: left;
+		width:120px;
+		height:189px;
+		position: relative;
+		left: 70px;
+		top:5px;
+	}
+	
+	/* Shaul's logo */
+	#shaul {
+		margin: auto;
+		width:120px;
+		height:189px;
+	}
+	
+	#shauPic {
+		margin: auto;
+		background-image: url(../img/shaul_small.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 140px;
+		width: 120px;
+	}
+	
+	#shaulTxt {
+		margin: auto;
+		background-image: url(../img/logo_small_txt.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 49px;
+		width: 93px;
+	}
+	/* results box */
+	
+	/* results container */
+	#resultsContainer {
+		position: relative;
+		float:left;
+		border-radius: 10px;
+		height: 139px;
+		width: 317.5px;
+		top:30px;
+		left: 30px;
+		background-color:#BF1067;
+	}
+	
+	/* assumption part container */
+	#assumpContainer {
+		position: relative;
+		float: right;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		/*border-radius: 10px;
+		top: 100px;*/
+		height: 139px;
+		background-color:#ffffff;
+	}
+	
+	/* assumption part title */
+	#assumpTlt {
+		position: relative;
+		top: 15px;
+		text-align: center;
+		font-family: 'poeti';
+		font-size: 3vw;
+		color: #BF1067;
+	}
+	
+	/* pension text container */
+	#assumpTxtContainer {
+		position: absolute;
+		margin: auto;
+	    bottom:0px; 
+	    margin-bottom: 20px;
+	    padding-top: 0px;
+		text-align: center;
+		font-family: 'poeti-bold';
+		font-size: 4vw;
+		color: #BF1067;
+		width:100%
+	}
+	
+	/* pension text */
+	#assumpTxt {
+		position: relative;
+		display:inline;
+	}
+	
+	#pensionContainer {
+		position: relative;
+		float: right;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		/*border-radius: 10px;
+		top: 100px;*/
+		height: 139px;
+		background-color:#BF1067;
+	}
+	
+	/* assumption part title */
+	#pensionTlt {
+		position: relative;
+		top: 15px;
+		text-align: center;
+		font-family: 'poeti';
+		font-size: 3vw;
+		color: #ffffff;
+	}
+	
+	/* pension text container */
+	#pensionTxtContainer {
+		position: absolute;
+		margin: auto;
+	    bottom:0px; 
+	    margin-bottom: 20px;
+	    padding-top: 0px;
+		text-align: center;
+		font-family: 'poeti-bold';
+		font-size: 4vw;
+		color: #ffffff;
+		width:100%
+	}
+	
+	/* pension text */
+	#pensionTxt {
+		position: relative;
+		display:inline;
+	}
+	
+	.bigger {
+		width: 60%;
+	}
+	.smaller {
+		width: 40%;
+	}
+	
+	#resultsArrow {
+		position: relative;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 44px;
+		height: 44px;
+		top: 50px;
+		left:295.5px;
+	}
+	
+	.whiteArrow {
+		background-image: url(../img/arrow_white.png);
+	}
+	
+	.pinkArrow {
+		background-image: url(../img/arrow_white.png);
+	}
+	/* continue to results button */
+	.continueBtn {
+		position: relative;
+		margin: 0 auto;
+		top: 30px;
+		margin-bottom: 30px;
+		width: 70%;
+		height: 76px;
+		background-color:#BF1067;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 8px 6px -6px #8e8c8c;
+		cursor: pointer;
+	}
+	
+	.continueBtnTxt {
+		position: relative;
+		margin: auto;
+		top: 20px;
+		font-size: 6vw;
+		font-family:'poeti-bold';
+		color:#FFFFFF;
+	}
 	/* seperator line*/
 	.hrLine {
 		position: relative;
@@ -1410,7 +1586,7 @@ input:focus {
 	.calcQues {
 		position: relative;
 		float: right;
-		width: 50%;
+		width: 100%;
 		direction: rtl;
 		text-align:right;
 		font-family: 'poeti-bold';
@@ -1421,13 +1597,13 @@ input:focus {
 	.expContainer {
 		position: relative;
 		width: 100%;
-		height: 140px;
+		height: 100px;
 	}
 	/* question explanation text */
 	.calcExp {
 		position: relative;
 		float: right;
-		width: 70%;
+		width: 100%;
 		direction: rtl;
 		text-align:right;
 		font-family: 'poeti';
@@ -1448,6 +1624,156 @@ input:focus {
 
 /* mobile*/
 @media (max-width: 590px) {
+	#resultsWrapper {
+		position:relative;
+		width: 100%;
+		height: 160px;
+	}
+	
+	/* logo container */
+	#logoContainerCalc { }
+	
+	/* Shaul's logo */
+	#shaul { }
+	
+	#shauPic { }
+	
+	#shaulTxt { }
+	/* results box */
+	
+	/* results container */
+	#resultsContainer {
+		position: relative;
+		margin: 0 auto;
+		border-radius: 10px;
+		height: 130px;
+		width: 80%;
+		top:15px;
+		background-color:#BF1067;
+	}
+	
+	/* assumption part container */
+	#assumpContainer {
+		position: relative;
+		float: right;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		/*border-radius: 10px;
+		top: 100px;*/
+		height: 130px;
+		background-color:#ffffff;
+	}
+	
+	/* assumption part title */
+	#assumpTlt {
+		position: relative;
+		top: 15px;
+		text-align: center;
+		font-family: 'poeti';
+		font-size: 5vw;
+		color: #BF1067;
+	}
+	
+	/* assumption text container */
+	#assumpTxtContainer {
+		position: absolute;
+		margin: auto;
+	    bottom:0px; 
+	    margin-bottom: 20px;
+	    padding-top: 0px;
+		text-align: center;
+		font-family: 'poeti-bold';
+		font-size: 6vw;
+		color: #BF1067;
+		width:100%
+	}
+	
+	/* pension text */
+	#assumpTxt {
+		position: relative;
+		display:inline;
+	}
+	
+	#pensionContainer {
+		position: relative;
+		float: right;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		/*border-radius: 10px;
+		top: 100px;*/
+		height: 130px;
+		background-color:#BF1067;
+	}
+	
+	/* assumption part title */
+	#pensionTlt {
+		position: relative;
+		top: 15px;
+		text-align: center;
+		font-family: 'poeti';
+		font-size: 5vw;
+		color: #ffffff;
+	}
+	
+	/* pension text container */
+	#pensionTxtContainer {
+		position: absolute;
+		margin: auto;
+	    bottom:0px; 
+	    margin-bottom: 20px;
+	    padding-top: 0px;
+		text-align: center;
+		font-family: 'poeti-bold';
+		font-size: 6vw;
+		color: #ffffff;
+		width:100%
+	}
+	
+	/* pension text */
+	#pensionTxt {
+		position: relative;
+		display:inline;
+	}
+	
+	.bigger {
+		width: 60%;
+	}
+	.smaller {
+		width: 40%;
+	}
+	
+	#resultsArrow { }
+	
+	.whiteArrow {
+		background-image: url(../img/arrow_white.png);
+	}
+	
+	.pinkArrow {
+		background-image: url(../img/arrow_pink.png);
+	}
+	/* continue to results button */
+	.continueBtn {
+		position: relative;
+		margin: 0 auto;
+		top: 30px;
+		margin-bottom: 30px;
+		width: 70%;
+		height: 46px;
+		background-color:#BF1067;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 8px 6px -6px #8e8c8c;
+		cursor: pointer;
+	}
+	
+	.continueBtnTxt {
+		position: relative;
+		margin: auto;
+		top: 15px;
+		font-size: 6vw;
+		font-family:'poeti-bold';
+		color:#FFFFFF;
+	}
 	/* seperator line*/
 	.hrLine {
 		position: relative;
@@ -1470,14 +1796,14 @@ input:focus {
 		bottom: 0;*/
 		top:0px;
 		width: 100%;
-		height: 200px;
+		height: 160px;
 		background-color:#24a499;
 	}
 	
 	/* container for all sliders */
 	#sliders {
 		position: relative;
-		top: 220px;
+		top: 200px;
 		float: right;
 		width: 100%;
 	}
@@ -1491,7 +1817,7 @@ input:focus {
 	.calcQues {
 		position: relative;
 		float: right;
-		width: 50%;
+		width: 100%;
 		direction: rtl;
 		text-align:right;
 		font-family: 'poeti-bold';
@@ -1502,18 +1828,18 @@ input:focus {
 	.expContainer {
 		position: relative;
 		width: 100%;
-		height: 170px;
+		height: 120px;
 	}
 	/* question explanation text */
 	.calcExp {
 		position: relative;
 		float: right;
-		width: 70%;
+		width: 100%;
 		direction: rtl;
 		text-align:right;
 		font-family: 'poeti';
 		color:#434141;
-		font-size: 4vw;
+		font-size: 4.5vw;
 		margin-bottom: 10px;
 	}
 	/* define slider positions */
