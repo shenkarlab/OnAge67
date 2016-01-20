@@ -24,7 +24,7 @@ header, footer, main, aside, article, section, nav {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f0f0f0;
+	background-color: #ffffff;
 }
 
 #about {
@@ -1094,6 +1094,25 @@ input:focus {
 		margin: 0 auto;
 	}
 	
+	/* about link */
+	#aboutLink {
+		width:100%;
+		height:60px;
+		position: relative;
+	    margin: auto;
+	    direction: rtl;
+	}
+	
+	#aboutLink a {
+		position: relative;
+		top: 30px;
+	    left: 10%;
+		font-family: 'poeti';
+		float: left;
+	    font-size: 1.5vw;
+	    color: #FFFFFF;	
+	}
+	
 	/* continue to results button */
 	.continueBtn {
 		position: relative;
@@ -1161,7 +1180,8 @@ input:focus {
 		height:321px;
 		position: relative;
 		margin: auto;
-		top: 140px;	
+		top: 80px;
+	
 	}
 	
 	/* results box */
@@ -1171,7 +1191,7 @@ input:focus {
 		position: relative;
 		margin: auto;
 		border-radius: 10px;
-		top: 100px;
+		top: 40px;
 		height: 159px;
 		width: 80%;
 		background-color:#BF1067;
@@ -1300,7 +1320,7 @@ input:focus {
 		width: 100%;
 		height: 40px;
 	}
-	.calcQues {
+	.questionContainer p {
 		position: relative;
 		float: right;
 		width: 50%;
@@ -1318,7 +1338,7 @@ input:focus {
 		height: 100px;
 	}
 	/* question explanation text */
-	.calcExp {
+	.expContainer p {
 		position: relative;
 		float: right;
 		width: 70%;
@@ -1354,6 +1374,150 @@ input:focus {
 		height: 100%;
 		background-color:#24a499;
 	}
+	
+	/* conclusion pages style */
+	#conclusion {
+		background-color:#24A499;
+	}
+	#conclusion #aboutLink a {
+		left: 5%;
+	}
+	#conclusion main {
+		position: relative;
+		top:40px;
+		width:80%;
+		margin: auto;
+	}
+	#conclusion #resultsWrapper {
+		position: relative;
+		float:right;
+		width: 45%;
+	}
+	
+	#conclusion #resultsContainer {
+		top:0;
+	}
+	
+	#conclusion #logoContainerCalc {
+		top:40px;	
+	}
+	#conclusionContainer{
+		position: relative;
+		float:left;
+		right:60px;
+		width:55%;
+		/*height:530px;*/
+		font-family: 'poeti';
+		direction:rtl;
+	}
+	
+	#conclusionContainer .smallTlt{
+		font-family: 'poeti-bold';
+		color:#BF1067;
+		font-size:2.5vw;
+		width: 65%;
+		text-align:right;
+	}
+	#conclusionContainer .bigTlt{
+		color:#BF1067;
+		font-size:4vw;
+		font-family: 'poeti-bold';
+		width: 65%;
+		text-align:right;
+	}
+	#conclusionContainer .txt{
+		text-align:justify;
+		position: relative;
+		top: 30px;
+		width: 60%;
+		height:200px;
+		color:#ffffff;
+		font-size:1.7vw;
+	}
+	#conclusionContainer .continueBtn {
+		position: relative;
+		float: right;
+		top: 70px;
+		width: 60%;
+		height: 76px;
+		background-color:#BF1067;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 8px 6px -6px #434141;
+		cursor: pointer;
+	}
+	#conclusionContainer .continueBtnTxt {
+		position: relative;
+		margin: auto;
+		top: 15px;
+		font-size: 4vw;
+		font-family:'poeti-bold';
+		color:#FFFFFF;	
+	}
+	#sharing {
+		top:70px;
+		float:right;
+		position: relative;	
+		height:50px;
+		width:60%;
+	}
+	.shareTxt {
+		color: #ffffff;
+		font-size:1.3vw;
+		float:right;
+		text-align:center;
+		position: relative;
+		width:20%;
+	}
+	.shareLine {
+		top: 6px;
+		float:right;
+		position: relative;
+		/*display:inline;*/
+		height:1px;
+		background-color:#FFFFFF;
+		width:40%;
+	}
+	
+	#sharingBtns {
+		position: relative;
+		top:10px;
+		margin: 0 auto;
+		width:200px;
+		height: 40px;
+	}
+	.sharingCircle {
+		position: relative;
+		border-radius:50%;
+		height:40px;
+		width:40px;
+		background-color:#BF1067;
+		float: right;
+		margin-right:7px;
+		cursor:pointer;
+		box-shadow: 0 8px 6px -6px #434141;
+	}
+	
+	.whatsapp {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/whatsapp.png);
+	}
+	.facebook {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/face.png);
+	}
+	.excell {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/excell.png);
+	}
+	.email {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/email.png);
+	}
 }
 
 /* tablet */
@@ -1363,6 +1527,11 @@ input:focus {
 		width:549.5px;
 		height: 200px;
 		margin: 0 auto;
+	}
+	
+	/* about link */
+	#aboutLink {
+		display: none;
 	}
 	
 	/* logo container */
@@ -1453,6 +1622,13 @@ input:focus {
 	#assumpTxt {
 		position: relative;
 		display:inline;
+	}
+	
+	.smallTxt {
+		font-size:2vw;
+	}
+	.regularTxt{
+		font-size:2.5vw;
 	}
 	
 	#pensionContainer {
@@ -1583,7 +1759,7 @@ input:focus {
 		width: 100%;
 		height: 40px;
 	}
-	.calcQues {
+	.questionContainer p {
 		position: relative;
 		float: right;
 		width: 100%;
@@ -1600,7 +1776,7 @@ input:focus {
 		height: 100px;
 	}
 	/* question explanation text */
-	.calcExp {
+	.expContainer p {
 		position: relative;
 		float: right;
 		width: 100%;
@@ -1628,6 +1804,11 @@ input:focus {
 		position:relative;
 		width: 100%;
 		height: 160px;
+	}
+	
+	/* about link */
+	#aboutLink {
+		display: none;
 	}
 	
 	/* logo container */
@@ -1692,6 +1873,13 @@ input:focus {
 	#assumpTxt {
 		position: relative;
 		display:inline;
+	}
+	
+	.smallTxt {
+		font-size:2vw;
+	}
+	.regularTxt{
+		font-size:2.5vw;
 	}
 	
 	#pensionContainer {
@@ -1814,7 +2002,7 @@ input:focus {
 		width: 100%;
 		height: 40px;
 	}
-	.calcQues {
+	.questionContainer p {
 		position: relative;
 		float: right;
 		width: 100%;
@@ -1831,7 +2019,7 @@ input:focus {
 		height: 120px;
 	}
 	/* question explanation text */
-	.calcExp {
+	.expContainer p {
 		position: relative;
 		float: right;
 		width: 100%;
@@ -1851,5 +2039,35 @@ input:focus {
 		margin-bottom: 20px;
 		font-family: Arial;
 	}
+	.sharingCircle {
+		position: relative;
+		border-radius:50%;
+		height:40px;
+		width:40px;
+		background-color:#BF1067;
+		float: right;
+		margin-right:7px;
+		cursor:pointer;
+	}
+	
+	.whatsapp {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/whatsapp.png);
+	}
+	.facebook {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/face.png);
+	}
+	.excell {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/excell.png);
+	}
+	.email {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/email.png);
+	}
 }
-

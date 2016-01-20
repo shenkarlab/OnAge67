@@ -10,25 +10,76 @@
 		<!-- controller and calculator scripts -->
 		<script type="text/javascript" src="includes/controller.js"></script>
 		<script type="text/javascript" src="includes/calculator.js"></script>
+		<script type="text/javascript" src="includes/socialPlugins.js"></script>
 		<title>כשתהיו בני 67</title>
 	</head>
-	<body id="about">
-		<header>
-			<nav>
-				<section id="links">
-					<a href="contact.html"><img src="img/contact.jpg"></a>
-					<img src="img/sep.jpg">
-					<a href="about.html"><img src="img/about.jpg"></a>
-					<img src="img/sep.jpg">
-					<a href="index.html"><img src="img/calculator.jpg"></a>
-				</section>
-			</nav>
+	<body id="conclusion">
+		<header id="aboutLink">
+			<a href="#">איך הגענו לזה?</a>
 		</header>
 		<main>
-			<section id="result_bar"></section>
-			<section id="center_txt"></section>
+			<section id="resultsWrapper">
+				<section id="resultsContainer">
+					<section id="assumpContainer" class="bigger">
+						<section id="assumpTlt">
+							גובה הפנסיה המשוערת
+						</section>
+						<section id="assumpTxtContainer">
+							₪
+							<section id="assumpTxt"></section>
+						</section>
+					</section>
+					<section id="pensionContainer" class="smaller">
+						<section id="pensionTlt">
+							גובה הפנסיה העתידית
+						</section>
+						<section id="pensionTxtContainer" class="regularTxt">
+							₪
+							<section id="pensionTxt"></section>
+						</section>
+					</section>
+					<section id="resultsArrow" class="whiteArrow"></section>
+				</section>
+				<section id="logoContainerCalc">
+					<section id="shaul">
+						<section id="shauPic"></section>
+						<section id="shaulTxt"></section>
+					</section>
+				</section>
+			</section>
+			<section id="conclusionContainer">
+				<section class="smallTlt">
+					ובכן,
+				</section>
+				<section class="bigTlt">
+					זה לא מה שציפית.
+				</section>
+				<section class="txt">
+					זה לא מה שציפית. זה לא מה שציפית. זה לא מה שציפית. זה לא דכגדעגדעדגמה שציפית. זה לא מה שציפית. זה לא מה שצידכשכשפית. זה לא מה שציפית. זה לא מה שציפית. זה לא מה שציפית.
+					זה לא מהFד שציפית. זה לא מה שציפית. זה לא מה שציפשדגכSAFASית. זה לא מה שציפית. זה לא מה שציפית. זה לא מה שציפית.
+				</section>
+				<section class="continueBtn">
+					<section class="continueBtnTxt">
+						חזור למחשבון
+					</section>
+				</section>
+				<section id="sharing">
+					<section class="shareLine"></section>
+					<section class="shareTxt">שתף</section>
+					<section class="shareLine"></section>
+					<div class="clear"></div>
+					<section id="sharingBtns">
+						<section class="sharingCircle email"></section>
+						<section class="sharingCircle excell"></section>
+						<section class="sharingCircle whatsapp" data-text="בדקו את הפנסיה שלכם במחשבון הפנסיה של כלכליסט" data-link="http://shenkar.html5-book.co.il/2015-2016/lab/dev_13/" ></section>
+						<section class="sharingCircle facebook" data-sns="facebook"></section>
+					</section>
+				</section>
+			</section>
+			<div class="clear"></div>
+			<!-- <section id="result_bar"></section>
+			<section id="center_txt"></section> -->
 		</main>
-		<footer></footer>
 		<script>
 			(function() {
 				generateResult();
