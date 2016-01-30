@@ -3,32 +3,63 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="includes/style.css">
+
+		<!-- jQuery library -->
+		<script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
+
+		<!-- controller and calculator scripts -->
+		<script type="text/javascript" src="includes/controller.js"></script>
+		<script type="text/javascript" src="includes/calculator.js"></script>
+		<script type="text/javascript" src="includes/socialPlugins.js"></script>
 		<title>כשתהיו בני 67</title>
 	</head>
 	<body id="about">
-		<header>
-			<nav>
-				<section id="links">
-					<a href="contact.html"><img src="img/contact.jpg"></a>
-					<img src="img/sep.jpg">
-					<a href="#"><img src="img/about2.jpg"></a>
-					<img src="img/sep.jpg">
-					<a href="index.html"><img src="img/calculator.jpg"></a>
-				</section>
-			</nav>
+		<header id="aboutLink">
+			<a href="#" id="backlink">חזור</a>
+			<a href="#" id="line"> | </a>
+			<a href="index.html">התחל מחדש</a>
 		</header>
 		<main>
-			<img id="calcalistlogo" src="img/calcalistlogo.png">
-			<img id="shnkarlogo" src="img/shnkarlogo.png">
-			<section id="center_txt">
-				שיתוף פעולה של "כלכליסט" וסטודנטים משנה ד' בתחום הנדסת התוכנה והעיצוב בשנקר, מגיש לכם את מחשבון הפנסיה האמיתי. לאחר מחקר מעמיק שערכנו בשיתוף עם החברים מכלכליסט בנינו מחשבון שבעזרת
-				שאלות מנחות כשלב ראשון ומשחק עם הנתונים בשלב השני תוכלו לקבל תמונת מצב לגבי הפנסיה שלכם. כשלב שלישי לאחר קבלת תמונת המצב, המחשבון ימליץ כיצד להגדיל את החיסכון לקראת הפנסיה
-				ואיך אפשר לשמור יותר טוב על הכסף. בנוסף, תוכלו לשתף את סביבתכם ולהעלות את המודעות בקרב הציבור הישראלי לגבי המונח האפור אשר נקרא פנסיה.
-				<br><br>
-				חשוב לנו לציין כי אין בנתונים המוזנים ע"י המשתמשים שימוש מלבד חישובי סטטיסטיקה המוצגים בסוף התהליך.
+			<section id="wrapper">
+				<section id="piniContainer">
+					<div id="pini"></div>
+				</section>
+				<section id="aboutWrapper">
+					<section id="aboutBox">
+						<div id="boxArrow"></div>
+						<h1>איך הגענו לזה?</h1>
+						<p>
+							מחשבון הפנסיה של ״כלכליסט״ ושנקר מאפשר לכם לראות כיצד שינויים בפרמטרים שונים משפיעים על הפנסיה העתידית שלכם. כל הנחות ברירות המחדל שלנו הן הנחות ברירות המחדל שקבע משרד האוצר והן שונות מאלו של חברות הביטוח.
+							בשביל לשער בשלב הראשון מה תהיה הפנסיה הצפויה שלכם התבססנו על הגיל שלכם ועל המשכורת שלכם. בנוסף, הנחנו ששיעור החיסכון שלכם לפנסיה הוא השיעור הממוצע במשק - 17.5%. הנחנו שדמי הניהול שאתם משלמים הם דמי הניהול הממוצעים בשוק - 3% מכל הפקדה חודשית ועוד 0.35% מסך החיסכון המצטבר. הנחנו גם שהתשואה השנתית הממוצעת שתקבלו על הכסף שלכם לאורך השנים היא 4%. הנחנו גם שלא תמשכו את כספי הפיצויים שלכם אפילו פעם אחת, ושמשך החיסכון הכולל שלכם יהיה 30 שנה.
+							המחשבון שלנו שונה מזה של חברות הביטוח, משום שהנחות העבודה שלהן אופטימיות יותר. הן לא כוללות בחישובים שלהן את דמי הניהול שהן גובות, הן מעריכות שתעבדו ברציפות 40 שנה ויותר, ובוודאי לא נותנות לכם אפשרות לבדוק מה יקרה לפנסיה שלכם אם התשואה תהיה נמוכה יותר מ-4% או אם תמשכו את כספי הפיצויים.
+						</p>
+						<section id="logos">
+							<div id="shenkar"></div>
+							<div id="calcalist"></div>
+							<div id="clear"></div>
+						</section>
+					</section>
+					<section id="sharing">
+						<section class="shareLine"></section>
+						<section class="shareTxt">
+							שתף
+						</section>
+						<section class="shareLine"></section>
+						<div class="clear"></div>
+						<section id="sharingBtns">
+							<section class="sharingCircle email"></section>
+							<section class="sharingCircle whatsapp" data-text="בדקו את הפנסיה שלכם במחשבון הפנסיה של כלכליסט" data-link="http://shenkar.html5-book.co.il/2015-2016/lab/dev_13/" ></section>
+							<section class="sharingCircle facebook" data-sns="facebook"></section>
+						</section>
+					</section>
+				</section>
+				<div class="clear"></div>
 			</section>
-			<section id="enjoy"><img src="img/enjoy.png"></section>
 		</main>
-		<footer></footer>
+		<script>
+			(function() {
+				putBackLink();
+			})();
+		</script>
 	</body>
 </html>

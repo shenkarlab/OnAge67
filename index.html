@@ -3,25 +3,73 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="includes/style.css">
+		<script type="text/javascript" src="includes/controller.js"></script>
+		<!-- jQuery library -->
+		<script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
 		<title>כשתהיו בני 67</title>
 	</head>
 	<body id="bIndex">
-			<aside id="right">
-				<section id="topRight">
-					צאו לדרך! אני כאן איתכם
-					<span id="arrow" class="whiteArrow"></span>
-				</section>
-				<section id="shaulAll">
-					<section id="shauPic"></section>
-					<section id="shaulTxt"></section>
-				</section>
-		   </aside>
-		   <section id="left">
-			   	<nav class="oNav">
-					<a href="contact.html">איך הגענו לזה?</a>
-				</nav>
-				<section id="entrance">מי את, קרן?</section>
-				<section id="presentation">אם  תשאלו את קרן הפנסיה שלכם מהו הסכום החודשי שאותו אתם צפויים לקבל כשתגיעו לגיל שבו לא תוכלו לעבוד יותר, היא תזרוק לכם מספר</section>			
+		<section id="right">
+			<nav class="oNavRight">
+				<a href="about.html?ref=index">איך הגענו לזה?</a>
+			</nav>
+			<section id="topRight">
+				<section class="topRightTxt"><p>צאו לדרך! אני כאן איתכם</p></section>
+					<section id="arrow" class="whiteArrow"></section>
+					<div class="clear"></div>
 			</section>
+			<section id="shaulAll">
+				<section id="shauPic"></section>
+			</section>
+		</section>
+		<section id="left">
+			<nav class="oNav">
+				<a href="about.html?ref=index">איך הגענו לזה?</a>
+			</nav>
+			<section id="wrapper">
+				<section id="entrance">
+					<section id="tltContainer">
+						<p>רוצים לדעת מה באמת תהיה הפנסיה שלכם?</p>
+					</section>
+					<p>"כלכליסט" ושנקר מגישים לכם - מחשבון הפנסיה האמיתי</p>
+				</section>
+				<section id="presentation">
+					<p>
+						אם  תשאלו את קרן הפנסיה שלכם מהו הסכום החודשי שאותו אתם צפויים לקבל כשתגיעו לגיל שבו לא תוכלו לעבוד יותר, היא תזרוק לכם מספר.
+						<br>
+						רק שלמספר הזה אין שום קשר למציאות. הוא אופטימי מידי, וכדי שתקבלו אותו צריכות להתקיים כל מיני הנחות סמויות - שאותן בדר"כ קרן הפנסיה לא מגלה.
+						אם הן לא יתקיימו, הפנסייה שלכם תתכווץ. בהרבה מאוד כסף.
+					</p>
+				</section>
+				<section id="btnback_start">
+					<p>התחל</p>
+				</section>	
+				<!-- <section id="lower_text">
+					אחרי שתענו על מספר שאלות קצרות תוכלו "לשחק" עם ההנחות הסמויות
+					<br>
+					שמאחורי החיסכון לגיל הפרישה שלכם ולגלות איך כל אחת מהן משפיעה עליו.				
+				</section> -->
+				<section id="credits">
+					<section class="creditPink">עיצוב:</section>
+					חגי איטח, אורי גרופר
+					<section class="creditBlue">//</section>
+					<section class="creditPink">תכנות:</section>
+					הדס נדן, דויד כהן
+					<section class="creditBlue">//</section>
+					<section class="creditPink">הנחיה:</section>
+					מושון זר אביב, יונית רושו
+					<section class="creditBlue">//</section>
+					<br>
+					<section class="creditPink">תוכן:</section>
+					שאול אמסטרדמסקי, אלון רייס
+					<section class="creditBlue">//</section>
+				</section>
+			</section>
+		</section>
+		<script>
+			(function() {
+				startByCLick();
+			})();
+		</script>
 	</body>
 </html>

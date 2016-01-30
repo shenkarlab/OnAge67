@@ -27,102 +27,6 @@ body {
 	background-color: #ffffff;
 }
 
-#about {
-	height: 768px;
-}
-
-#contact_us {
-	position: relative;
-	margin: auto;
-	top: 100px;
-	width: 921px;
-	height: 271px;
-}
-
-#about main {
-	width: 670px;
-	height: 518px;
-	position: relative;
-	margin: auto;
-}
-
-#about footer, #contact footer {
-	position: relative;
-	top: 50px;
-	width: 100%;
-	height: 65px;
-	background-color: #c1acab;
-}
-
-#about header, #contact header {
-	position: relative;
-	width:100%;
-	height: 135px;
-	z-index: 20;
-}
-
-#about nav, #contact nav {
-	float: left;
-	position: relative;
-	top: 35px;
-	left: 30px;
-}
-
-#questions nav {
-	float: left;
-	position: relative;
-	width: 200px;
-	top: 35px;
-	left: 30px;
-}
-
-#contact main {
-	width: 100%;
-	height: 568px;
-	position: relative;
-	margin: auto;
-}
-
-#calcalistlogo { 
-	width: 149px;
-	height: 36px;
-	position: relative;
-} 
-
-#shnkarlogo { 
-	width: 152px;
-	height: 49px;
-	position: relative; 
-	left: 364px;
-}
-
-#center_txt {
-	font-family: Font37-Regular;
-	font-size: 28px;
-	position: relative;
-	margin: auto;
-	top: 25px;
-	direction: rtl;
-}
-
-#enjoy {
-	top: 140px;
-	position: relative;
-}
-
-#questions main {
-	left: 0px;
-	top: 0px;
-	position: relative;
-	margin: auto;
-	width: 1024px;
-	height: 648px;
-	overflow: hidden;
-	z-index: 0;
-}
-
-
-
 #title {
 	top: 79px; 
 	position: relative; 
@@ -131,102 +35,13 @@ body {
 	height: 51px;	
 }
 
-#question {
-	position: relative;
-	margin: auto;
-	height: 59px;
-	font-family: Font37-Regular;
-	font-size: 100px;
-	text-align: center;
-	direction: rtl;
-	z-index: 3;
-}
-
-#circles {
-	position: relative;
-	width: 110px;
-	margin: auto;
-	top: 130px;
-	z-index:25;
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	margin-left: 10.5px;
-	float: left;
-	background: url(../img/circle.png);
-	height: 17px;
-	width: 17px;
-	z-index:23;
-}
-
-li.left {
-	margin-left:5px;
-}
-
-li.selected {
-	background: url(../img/layer_1.png);
-}
-
 .clear {
 	clear: both;
 }
 
-#questions footer {
-	position: fixed;
-	background: #c1acab;
-	width: 100%;
-	height: 64px;
-	bottom:0;
-	text-align:center;
+.oNavRight {
+	display:none;
 }
-
-
-#footer_container {
-	position: relative;
-	top: 10px;
-	margin: 0 auto;
-	font-family: Font37-Regular;
-	font-size: 40px;
-	color: #FFFFFF;
-	z-index: 20;
-	direction: rtl;
-}
-
-#footer_element {
-	float: left;
-    margin:1pt;
-    width:72pt;
-    height:72pt;
-}
-
-#user_input {
-	position: relative;
-	margin: auto;
-	top: 80px;
-	width: 300px;
-	height: 50px;
-}
-
-#small_line {
-	position: relative; 
-	width: 43px;
-	left:155px;
-	height: 5px;
-	z-index:16;
-}
-
-#line { 
-	position: relative; 
-	width: 132px;
-	top: 15px;
-	left:105px;
-	height: 5px;
-	z-index:16;
-} 
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -238,410 +53,64 @@ input:focus {
     outline:none;
 }
 
+/* for later input fields */
 #small_inp {
-	bottom: 72px;
-	left:155px;
-	position: relative; 
-	width: 45px;
-	height: 50px;
-	z-index:17;
-	font-family: Font37-Regular;
-	font-size: 50px;
 	text-align: center;
 	background: transparent;
     border: none;
-}
-
-#inp_field {
-	bottom: 57px;
-	left:103px;
-	position: relative; 
-	width: 131px;
-	height: 50px;
-	z-index:17;
-	font-family: Font37-Regular;
-	font-size: 50px;
-	text-align: center;
-	background: transparent;
-    border: none;
-}
-
- #currency { 
-	bottom: 7px;
-	left: 65px;
-	position: relative; 
-	width: 38px;
-	height: 30px;
-	z-index:15;
-} 
-
-#years {
-	bottom: 18px;
-	left: 110px;
-	position: relative; 
-	width: 38px;
-	height: 30px;
-	z-index:15;
-}
-
-#icon {
-	position: relative;
-	margin: auto;
-	width: 200px;
-	height: 250px;
-	top: 120px;
-}
-
-#male {
-	display: inline;
-	position: relative;
-	left: 36px;
-	width:80px;
-	height:91px;
-}
-
-#female {
-	display: inline;
-	position: relative;
-	left: 10px;
-}
-
-#test {
-	position: relative;
-	top: 213px;
-	background-color: #60D7A9;
-	margin: auto;
-	z-index:50;
-	width: 186px;
-	height: 91px;
-}
-
-#calc_enabled {
-	background-image: url(../img/to_calc_en.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	z-index:20;
-	cursor:pointer;
-}
-
-#calc_disabled {
-	background-image: url(../img/to_calc_dis.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	z-index:20;
-	cursor:default;
-}
-
-#btn_disabled {
-	background-image: url(../img/btn-dis.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:100px;
-	height:60px;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	cursor:default;
-	z-index:20;
-}
-
-#btn_enabled {
-	background-image: url(../img/btn-en.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:100px;
-	height:60px;
-	position: absolute;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	z-index:20;
-	cursor:pointer;
-}
-
-#questions header {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	z-index: 19;
-}
-
-#continue {
-	margin-right: 200px;
-	direction: rtl;
-}
-
-#calcQues {
-	direction: rtl;
-	font-family: Font37-Regular;
-	font-size: 35px;
-	margin-bottom: 10px;
-}
-
-#sliderArea {
-	float: right;
-	margin-bottom: 50px;
-}
-
-#result {
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 500px;
-}
-
-#pension {
-	font-family: Font37-Regular;
-	font-size: 35px;
-	position: relative;
-	margin:auto;
-	top: 100px;
-	width: 200px;
-	height: 50px;
-	font-size: 50px;
-	text-align: center;
-	background-image: url(../img/box_0.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-}
-
-#assumption {
-	font-family: Font37-Regular;
-	font-size: 35px;
-	position: relative;
-	margin: auto;
-	top: 100px;
-	background-image: url(../img/box.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-	font-size: 50px;
-	text-align: center;
-	color:#000000;
-}
-
-#slider {
-	width: 600px;
-	margin-right: 120px;
-	margin-top: 50px;
-	font-family: Arial;
-}
-
-#result_bar {
-	position: relative;
-	margin: auto;
-	width: 350px;
-	height: 200px;
-}
-
-
-#pens_higher {
-	float: left;
-	position: absolute;
-	bottom:0;
-	height: 200px;
-	width: 150px;
-	background-color: #bb3030;
-}
-
-#pens_lower {
-	float: left;
-	position: absolute;
-	height: 100px;
-	width: 150px;
-	bottom:0;
-	background-color: #bb3030;
-}
-
-#assump_higher {
-	float: left;
-	position: absolute;
-	bottom:0;
-	left: 200px;
-	height: 200px;
-	width: 150px;
-	background-color: #39acc1;
-}
-
-#assump_lower {
-	float: left;
-	position: absolute;
-	bottom:0;
-	left: 200px;
-	height: 100px;
-	width: 150px;
-	background-color: #39acc1;
-}
-
-#result_text_pens, #result_text_assump {
-	position: relative;
-	bottom:0;
-	font-family: Font37-Regular;
-	font-size: 35px;
-	text-align: center;
-	width: 150px;
-}
-
-
-
-#topRight{
-	position: relative;
-    top: 185px;
-    text-align: center;
-    font-family: 'poeti';
-    font-size: 2.5vw;
-    color: #FFFFFF;
-    margin: auto;
 }
 
 #shaulAll{
-	margin: auto;
-	position: relative;
-    top: 340px;
-    width: 206px;
-    height: 240px;
+	top: 235px;
+    margin: auto;
+    position: relative;
+    width: 228px;
 }
 
 #right{
 	float:right;
 	background: #24a499;
-    position: relative;
+    position: fixed;
     width: 32.8125%;
-    height: 768px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
 }
 
 #left{
 	float:left;
     position: relative;
     width: 67.1875%;
-    height: 768px;
-}
-
-nav {
-	font-family: 'poeti';
-    font-size: 30px;
-    text-align: center;
-    float: left;
-    position: relative;
-    top: 1.0046875%;
-    left: 3.3046875%;
-    direction: rtl;
-}
-
-
-#bStart #entrance{
-	margin: auto;
-	direction: rtl;
-    text-align: center;
-    font-family: 'poeti-bold';
-    color: #BF1067;
-	font-size: 4.01vw;
-    top: 179px;
-    position: relative;
-    width: 436px;
-    height: 141px;
-}
-
-#bIndex #entrance {
-    margin: auto;
-    direction: rtl;
-    text-align: center;
-    font-family: 'poeti-bold';
-    color: #BF1067;
-    font-size: 7.48vw;
-    top: 159px;
-    position: relative;
-    width: 436px;
-    height: 141px;
-}
-
-#bIndex #presentation{
-	margin: auto;
-	direction: rtl;
-    text-align: center;
-    font-family: 'poeti';
-	font-size: 1.8vw;
-    top: 160px;
-    position: relative;
-    width: 450px;;
-    height: 141px;
-    color: #555454;
-}
-
-#bStart #presentation{
-	margin: auto;
-	direction: rtl;
-    text-align: center;
-    font-family: 'poeti';
-	font-size: 1.4vw;
-    top: 160px;
-    position: relative;
-    width: 436px;
-    height: 141px;
-    color: #555454;
 }
 
 #btnback_start{
 	margin: auto;
     background: #BF1067;
-    border-radius: 10px;
-    top: 250px;
+    border-radius: 5px;
+    top: 200px;
     position: relative;
-    width: 442px;
-    height: 99px;
+    box-shadow: 0 8px 6px -6px #434141;
+    width:75%;
+    height: 80px;
+    cursor: pointer;
 }
 
-#btnback_start section{
+#btnback_start p{
 	font-family: 'poeti';
-	font-size: 80px;
+	font-size: 60px;
     font-weight: 800;
 	text-align: center;
 	color: #FFFFFF;
 	padding-top: 10px;
 }
 
-#lower_text{
-	margin: auto;
-    font-family: 'poeti';
-    top: 265px;
-    position: relative;
-    text-align: center;
-    color: #555454;
-    width: 442px;
-    height: 34px;
-}
-
-#arrow{
-	bottom: 6px;
-    right: 4.946%;
-    float: left;
-    position: relative;
-    width: 44px;
-    height: 44px;
-}
-
 .oNav a{
 	width:100px;
 	height:60px;
 	margin: auto;
-	top: 100px;
+	top: 30px;
 	font-family: 'poeti';
 	position: relative;
-	top: 0px;
 	display: inline;
 	color: #24a499;
 	text-decoration: underline;
@@ -657,441 +126,481 @@ nav {
 	padding: 0;
 	background-color: #24a499;
 }
-.bottomFinish {
-	display: none;
-  	position: fixed;
-  	bottom: 70px;
-  	left:200px;
-  	z-index: 20;
-  	background-image: url(../img/btn-dis.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:100px;
-	height:60px;
-	cursor:pointer;
-}
-
-#about {
-	height: 768px;
-}
-
-#contact_us {
-	position: relative;
-	margin: auto;
-	top: 100px;
-	width: 921px;
-	height: 271px;
-}
-
-#about footer, #contact footer {
-	position: relative;
-	top: 50px;
-	width: 100%;
-	height: 65px;
-	background-color: #c1acab;
-}
-
-#about header, #contact header {
-	position: relative;
-	width:100%;
-	height: 135px;
-	z-index: 20;
-}
-
-#about nav, #contact nav {
-	float: left;
-	position: relative;
-	top: 35px;
-	left: 30px;
-}
-
-#questions nav {
-	float: left;
-	position: relative;
-	width: 200px;
-	top: 35px;
-	left: 30px;
-}
-
-#contact main {
-	width: 100%;
-	height: 568px;
-	position: relative;
-	margin: auto;
-}
-
-#calcalistlogo { 
-	width: 149px;
-	height: 36px;
-	position: relative;
-} 
-
-#shnkarlogo { 
-	width: 152px;
-	height: 49px;
-	position: relative; 
-	left: 364px;
-}
-
-#center_txt {
-	font-family: Font37-Regular;
-	font-size: 28px;
-	position: relative;
-	margin: auto;
-	top: 25px;
-	direction: rtl;
-}
-
-#enjoy {
-	top: 140px;
-	position: relative;
-}
-
-#questions main {
-	left: 0px;
-	top: 0px;
-	position: relative;
-	margin: auto;
-	width: 1024px;
-	height: 648px;
-	overflow: hidden;
-	z-index: 0;
-}
-
-#title {
-	top: 79px; 
-	position: relative; 
-	margin: auto;
-	width: 434px;
-	height: 51px;	
-}
-
-#opening_text{
-	position: relative;
-	margin: auto;
-	top: 65px;
-    width: 589px;
-    height: 304px;
-}
-
-#q_wrapper {
-	top: 50px;
-	width: 1024px;
-	position: relative;
-	right: 10px;
-	height: 59px;
-}
-
-#question {
-	position: relative;
-	margin: auto;
-	height: 59px;
-	font-family: Font37-Regular;
-	font-size: 100px;
-	text-align: center;
-	direction: rtl;
-	z-index: 3;
-}
-
-#circles {
-	position: relative;
-	width: 110px;
-	margin: auto;
-	top: 130px;
-	z-index:25;
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	margin-left: 10.5px;
-	float: left;
-	background: url(../img/circle.png);
-	height: 17px;
-	width: 17px;
-	z-index:23;
-}
-
-li.left {
-	margin-left:5px;
-}
-
-li.selected {
-	background: url(../img/layer_1.png);
-}
-
-.clear {
-	clear: both;
-}
-
-#questions footer {
-	position: fixed;
-	background: #c1acab;
-	width: 100%;
-	height: 64px;
-	bottom:0;
-	text-align:center;
-}
-
-
-#footer_container {
-	position: relative;
-	top: 10px;
-	margin: 0 auto;
-	font-family: Font37-Regular;
-	font-size: 40px;
-	color: #FFFFFF;
-	z-index: 20;
-	direction: rtl;
-}
-
-#footer_element {
-	float: left;
-    margin:1pt;
-    width:72pt;
-    height:72pt;
-}
-
-#user_input {
-	position: relative;
-	margin: auto;
-	top: 80px;
-	width: 300px;
-	height: 50px;
-}
-
-#small_line {
-	position: relative; 
-	width: 43px;
-	left:155px;
-	height: 5px;
-	z-index:16;
-}
-
-#line { 
-	position: relative; 
-	width: 132px;
-	top: 15px;
-	left:105px;
-	height: 5px;
-	z-index:16;
-} 
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-input:focus {
-    outline:none;
-}
-
-#small_inp {
-	bottom: 72px;
-	left:155px;
-	position: relative; 
-	width: 45px;
-	height: 50px;
-	z-index:17;
-	font-family: Font37-Regular;
-	font-size: 50px;
-	text-align: center;
-	background: transparent;
-    border: none;
-}
-
-#inp_field {
-	bottom: 57px;
-	left:103px;
-	position: relative; 
-	width: 131px;
-	height: 50px;
-	z-index:17;
-	font-family: Font37-Regular;
-	font-size: 50px;
-	text-align: center;
-	background: transparent;
-    border: none;
-}
-
- #currency { 
-	bottom: 7px;
-	left: 65px;
-	position: relative; 
-	width: 38px;
-	height: 30px;
-	z-index:15;
-} 
-
-#years {
-	bottom: 18px;
-	left: 110px;
-	position: relative; 
-	width: 38px;
-	height: 30px;
-	z-index:15;
-}
-
-#icon {
-	position: relative;
-	margin: auto;
-	width: 200px;
-	height: 250px;
-	top: 120px;
-}
-
-#male {
-	display: inline;
-	position: relative;
-	left: 36px;
-	width:80px;
-	height:91px;
-}
-
-#female {
-	display: inline;
-	position: relative;
-	left: 10px;
-}
-
-#test {
-	position: relative;
-	top: 213px;
-	background-color: #60D7A9;
-	margin: auto;
-	z-index:50;
-	width: 186px;
-	height: 91px;
-}
-
-#calc_enabled {
-	background-image: url(../img/to_calc_en.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	z-index:20;
-	cursor:pointer;
-}
-
-#calc_disabled {
-	background-image: url(../img/to_calc_dis.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:250px;
-	height:100px;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	z-index:20;
-	cursor:default;
-}
-
-#btn_disabled {
-	background-image: url(../img/btn-dis.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:100px;
-	height:60px;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	cursor:default;
-	z-index:20;
-}
-
-#btn_enabled {
-	background-image: url(../img/btn-en.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	width:100px;
-	height:60px;
-	position: absolute;
-	position: relative;
-	margin: auto;
-	top: 120px;
-	z-index:20;
-	cursor:pointer;
-}
-
-#questions header {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	z-index: 19;
-}
-
-#continue {
-	margin-right: 200px;
-	direction: rtl;
-}
-
-#result_bar {
-	position: relative;
-	margin: auto;
-	width: 350px;
-	height: 200px;
-}
-
-
-#pens_higher {
-	float: left;
-	position: absolute;
-	bottom:0;
-	height: 200px;
-	width: 150px;
-	background-color: #bb3030;
-}
-
-#pens_lower {
-	float: left;
-	position: absolute;
-	height: 100px;
-	width: 150px;
-	bottom:0;
-	background-color: #bb3030;
-}
-
-#assump_higher {
-	float: left;
-	position: absolute;
-	bottom:0;
-	left: 200px;
-	height: 200px;
-	width: 150px;
-	background-color: #39acc1;
-}
-
-#assump_lower {
-	float: left;
-	position: absolute;
-	bottom:0;
-	left: 200px;
-	height: 100px;
-	width: 150px;
-	background-color: #39acc1;
-}
-
-#result_text_pens, #result_text_assump {
-	position: relative;
-	bottom:0;
-	font-family: Font37-Regular;
-	font-size: 35px;
-	text-align: center;
-	width: 150px;
-}
 
 /* desktop */
 @media (min-width: 851px) {
+	#bIndex #wrapper {
+		position: relative;
+		top:60px;
+		width:90%;
+	}
+	
+	#bQuestions .questionWrapper {
+		width:100%;
+		min-height:100px;
+	}
+	
+	#bQuestions #btnback_start {
+		margin: auto;
+	    background: #939393;
+	    border-radius: 5px;
+	    position: relative;
+	    box-shadow: 0 8px 6px -6px #434141;
+	    width:100%;
+	    height: 80px;
+	    cursor: pointer;
+	    top:30px;
+	    margin-bottom:20px;
+	    cursor: default;
+	}
+	
+	#bQuestions #topRight {
+	    direction: rtl;
+	    top: 130px;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 20px;
+	}
+	
+	#bQuestions #topRightTxt {
+	    min-height:200px;
+	}
+	
+	#bQuestions #shaulAll {
+		top:300px;
+		position: absolute;
+		left:0;
+		right:0;
+	}
+
+	#bQuestions #btnback_start p{
+		font-family: 'poeti';
+		font-size: 60px;
+	    font-weight: 800;
+		text-align: center;
+		color: #FFFFFF;
+		padding-top: 10px;
+	}
+	
+	.questionWrapper p {
+		position: relative;
+		top:35px;
+		float:right;
+		text-align:right;
+		direction:rtl;
+		font-family:'poeti-bold';
+		color:#BF1067;
+		font-size: 2.2vw;
+		letter-spacing:-1px;
+	}
+	
+	.inputWrapper {
+		position: relative;
+		float:left;
+		border-radius:2px;
+		background:#24A499;
+		width: 120px;
+    	height: 40px;
+    	top:30px;
+	}    
+	
+	#bQuestions #innerBtnContainer {
+		height: 40px;
+		width: 85%;
+		margin: auto;
+	}
+	
+	#bQuestions .innerBtnLeft {
+		position:relative;
+		top:6px;
+		width:30%;
+		float:left;
+		font-size:30px;
+		font-family:'poeti-bold';
+		color:#FFFFFF;
+	}
+	
+	#bQuestions .innerBtnLeft #years {
+		width:70%;
+	}
+	
+	#bQuestions .innerBtnRight {
+		height:40px;
+		width:70%;
+		float:right;
+		font-size:30px;
+	}
+	
+	#bQuestions .innerBtnRightYears {
+		width:30%;
+		height:40px;
+		float:right;
+		font-size:30px;
+	}
+	
+	#bQuestions #innerBtnYears {
+	    width: 95%;
+	    margin: auto;
+	    position: relative;
+	    top:1px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 30px;
+	}
+	
+	#bQuestions #inputLineYears {
+	    position: relative;
+	    bottom: 6px;
+	    width: 95%;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #FFFFFF;
+	}
+	
+	#bQuestions .innerBtnMoney {
+	    width: 100%;
+	    margin: auto;
+	    position: relative;
+	    top:1px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 30px;
+	}
+	
+	#bQuestions #inputLineMoney {
+	    position: relative;
+	    bottom: 6px;
+	    width: 100%;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #FFFFFF;
+	}
+	
+	#assumptionQuestion {
+		top:10px;
+	}
+	
+	/* seperator line*/
+	#bQuestions .hrLine{
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 100%;
+	}
+	
+	#bQuestions #topRight p {
+	    position: relative;
+	    text-align:right;
+	    top: 10px;
+	    font-size: 2vw;
+	}
+		
+	#bQuestions #wrapper {
+		position: relative;
+		width:60%;
+		top:100px
+	}
+	
 	#wrapper {
 		width: 100%;
 		margin: 0 auto;
+	}
+	
+	nav {
+		letter-spacing: -1px;
+		font-family: 'poeti';
+	    font-size: 30px;
+	    text-align: center;
+	    float: left;
+	    position: relative;
+	    top: 1.0046875%;
+	    left: 3.3046875%;
+	    direction: rtl;
+	}
+	
+	#bOpenConc main {
+	    margin: auto;
+	    width: 90%;
+	}
+	
+	#bOpenConc #left {
+	    width: 50%;
+	    position: relative;
+	    float: right;
+	}
+	
+	#bOpenConc #right {
+	    width: 40%;
+	    position: relative;
+	    float: right;
+	}
+	
+	#bOpenConc #btnbg_start {
+	    margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+	    top: 20px;
+	    position: relative;
+	    width: 90%;
+	    height: 84px;
+	    font-family: 'poeti';
+	    font-size: 4vw;
+	    font-weight: 800;
+	    text-align: center;
+	    color: #FFFFFF;
+	}
+	
+	#bOpenConc #right {
+	    width: 44.23%;
+	    position: relative;
+	}
+	
+	#bOpenConc #shauPic {
+	    background-image: url(../img/aboutPini1.gif);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 475px;
+	    width: 309px;
+	    right:50px;
+	}
+	#bOpenConc #entrance {
+		text-align: justify;
+		margin: auto;
+	    direction: rtl;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    top: 100px;
+	    position: relative;
+	    width: 100%;
+	    color: #FFFFFF;
+	    letter-spacing:-2.5px;
+	}
+	
+	#bOpenConc #entrance p{
+		position: relative;
+		margin: auto;
+	    width: 90%;
+	    min-height: 350px;
+	    color:#FFFFFF;
+	    font-size:2.5vw;
+	    text-align:justify;
+	    letter-spacing:-2px;
+	}
+	
+	#bOpenConc #btnbg_start p {
+	    padding-top: 16px;
+	    letter-spacing:-2px;
+	}
+	
+	#bOpenConc #shaulAll {
+	    float: right;
+	    position: relative;
+	    top: 70px;
+	    width: 324px;
+	}
+		
+	#conclusion #arrow {
+		bottom: 6px;
+	    right: 4.946%;
+	    float: left;
+	    position: relative;
+	    width: 44px;
+	    height: 44px;
+	}
+	
+	#bStart #entrance h1{
+		margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 60px;
+	    top: 140px;
+	    position: relative;
+	    width: 500px;
+	    height: 141px;
+	}
+	
+	#bStart #btnback_start {
+		box-shadow: 0 8px 6px -6px #434141;
+		cursor: pointer;
+	    margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+	    top: 160px;
+	    position: relative;
+	    width: 442px;
+	    height: 99px;
+	}
+	
+	#credits {
+		position: relative;
+		margin:0 auto;
+		direction: rtl;
+		text-align: center;
+		width:90%;
+		font-family:'poeti-bold';
+		font-size:1.5vw;
+		top:230px;
+		color:#555454;
+		padding-bottom:20px;
+	}
+	
+	.creditPink {
+		display:inline;
+		color:#BF1067;
+	}
+	
+	.creditBlue {
+		display:inline;
+		color:#24A499;
+	}
+	
+	#lower_text {
+		position: relative;
+	    margin: auto;
+	    font-family: 'poeti';
+	    top: 200px;
+	    text-align: center;
+	    width: 75%;
+	    font-size: 18px;
+	    direction: rtl;
+	    color: #000000;
+	    letter-spacing: -1px;
+	}
+	
+	#bStart #lower_text {
+	    margin: auto;
+	    font-family: 'poeti';
+	    top: 180px;
+	    position: relative;
+	    text-align: center;
+	    width: 442px;
+	    font-size: 18px;
+	    direction: rtl;
+	    color: #000000;
+	    letter-spacing: -1px;
+	}
+	
+	#entrance {
+		position:relative;
+		top:70px;
+		width:100%;
+	}
+	
+	#entrance #tltContainer p{
+		margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 3.3vw;
+	    top: 30px;
+	    position: relative;
+	    width: 80%;
+	    letter-spacing: -2.8px;
+	}
+	#entrance #tltContainer {
+		position: relative;
+		 width: 100%;
+	}
+	
+	#entrance p {
+		margin: 0 auto;
+	    direction: rtl;
+	    text-align: center;
+	    letter-spacing: -1.5px;
+	    font-family: 'poeti';
+	    font-size: 2.5vw;
+	    position: relative;
+	    top:25px;
+	    color: #555454;
+	}
+	
+	.bQuestions #entrance h1 {
+		margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 6.5vw;
+	    top: 159px;
+	    position: relative;
+	    width: 70%;
+	    height: 141px;
+	}	
+	
+	#q4 #entrance h1 {
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 5.5vw;
+	    top: 159px;
+	    position: relative;
+	    width: 77%;
+	    height: 141px;
+	}
+
+	#presentation{
+		margin: auto;
+		direction: rtl;
+	    text-align: justify;
+	    letter-spacing: -1px;
+	    font-family: 'poeti';
+		font-size: 1.7vw;
+		position: relative;
+	    top: 130px;
+	    
+	    width: 75%;
+	    color: #555454;
+	}
+	
+	.progressCircles {
+		top: 340px;
+	    margin: auto;
+	    position: relative;
+	    width: 84px;
+	    height: 21px;
+	}
+	
+	.progressCircle {
+		width: 8px;
+		height: 8px;
+		border-radius: 50px;
+		border: 4px solid #BF1067;
+		float: left;
+		margin-right: 6px;
+		margin-left: 6px;
+	}
+	
+	.filledCircle{
+		background: #BF1067;
+	}
+	#bStart #presentation{
+		margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti';
+	    font-size: 24px;
+	    top: 140px;
+	    position: relative;
+	    width: 70%;
+	    height: 141px;
+	    color: #555454;
 	}
 	
 	/* about link */
@@ -1101,6 +610,7 @@ input:focus {
 		position: relative;
 	    margin: auto;
 	    direction: rtl;
+	    color:#ffffff;
 	}
 	
 	#aboutLink a {
@@ -1124,7 +634,7 @@ input:focus {
 		background-color:#BF1067;
 		border-radius: 10px;
 		text-align: center;
-		box-shadow: 0 8px 6px -6px #8e8c8c;
+		box-shadow: 0 8px 6px -6px #434141;
 		cursor: pointer;
 	}
 	
@@ -1135,6 +645,7 @@ input:focus {
 		font-size: 4vw;
 		font-family:'poeti-bold';
 		color:#FFFFFF;
+		letter-spacing:-1px;
 	}
 	
 	/* seperator line*/
@@ -1148,18 +659,21 @@ input:focus {
 	
 	/* Shaul's logo */
 	#shaul {
+		background-image: url(../img/piniDesktop.gif);
+		background-size: contain;
+		background-repeat: no-repeat;
 		margin: auto;
-		width:300px;
-		height:321px;
+		width:228px;
+		height:334px;
 	}
 	
 	#shauPic {
 		margin: auto;
-		background-image: url(../img/shaul_big.png);
+		background-image: url(../img/piniDesktop.gif);
 		background-size: contain;
 		background-repeat: no-repeat;
-		height: 240px;
-		width: 206px;
+		height: 334px;
+		width: 228px;
 	}
 	
 	#shaulTxt {
@@ -1215,8 +729,9 @@ input:focus {
 		top: 15px;
 		text-align: center;
 		font-family: 'poeti';
-		font-size: 1.5vw;
+		font-size: 1.7vw;
 		color: #BF1067;
+		letter-spacing:-1px;
 	}
 	
 	/* pension text container */
@@ -1237,6 +752,7 @@ input:focus {
 	#assumpTxt {
 		position: relative;
 		display:inline;
+		letter-spacing:-1px;
 	}
 	
 	#pensionContainer {
@@ -1256,8 +772,9 @@ input:focus {
 		top: 15px;
 		text-align: center;
 		font-family: 'poeti';
-		font-size: 1.5vw;
-		color: #ffffff;
+		font-size: 1.7vw;
+    	color: #ffffff;
+    	letter-spacing: -1px;
 	}
 	
 	/* pension text container */
@@ -1277,6 +794,7 @@ input:focus {
 	#pensionTxt {
 		position: relative;
 		display:inline;
+		letter-spacing:-1px;
 	}
 	.smallTxt {
 		font-size:2vw;
@@ -1323,16 +841,18 @@ input:focus {
 	.questionContainer p {
 		position: relative;
 		float: right;
-		width: 50%;
+		width: 60%;
 		direction: rtl;
 		text-align:right;
 		font-family: 'poeti-bold';
 		color:#BF1067;
 		font-size: 2vw;
 		margin-bottom: 10px;
+		letter-spacing:-1px;
 	}
 	
 	.expContainer {
+		overflow:hidden;
 		position: relative;
 		width: 100%;
 		height: 100px;
@@ -1341,12 +861,12 @@ input:focus {
 	.expContainer p {
 		position: relative;
 		float: right;
-		width: 70%;
+		width: 80%;
 		direction: rtl;
 		text-align:right;
 		font-family: 'poeti';
 		color:#434141;
-		font-size: 1.5vw;
+		font-size: 18px;
 		margin-bottom: 10px;
 	}	
 	/* define slider positions */
@@ -1356,7 +876,7 @@ input:focus {
 		width: 75%;
 		margin-top: 50px;
 		margin-bottom: 50px;
-		}
+	}
 	/* container for all sliders */
 	#sliders {
 		position: relative;
@@ -1417,28 +937,32 @@ input:focus {
 		font-size:2.5vw;
 		width: 65%;
 		text-align:right;
+		letter-spacing: -2px;
 	}
 	#conclusionContainer .bigTlt{
-		color:#BF1067;
-		font-size:4vw;
-		font-family: 'poeti-bold';
-		width: 65%;
-		text-align:right;
+		color: #BF1067;
+	    font-size: 4vw;
+	    font-family: 'poeti-bold';
+	    width: 80%;
+	    text-align: right;
+	    letter-spacing: -3px;
 	}
 	#conclusionContainer .txt{
 		text-align:justify;
 		position: relative;
 		top: 30px;
-		width: 60%;
+		width: 70%;
 		height:200px;
 		color:#ffffff;
-		font-size:1.7vw;
+		font-size:25px;
+		overflow:hidden;
+		letter-spacing:-1px;
 	}
 	#conclusionContainer .continueBtn {
 		position: relative;
 		float: right;
-		top: 70px;
-		width: 60%;
+		top: 30px;
+		width: 70%;
 		height: 76px;
 		background-color:#BF1067;
 		border-radius: 10px;
@@ -1449,17 +973,17 @@ input:focus {
 	#conclusionContainer .continueBtnTxt {
 		position: relative;
 		margin: auto;
-		top: 15px;
-		font-size: 4vw;
+		top: 20px;
+		font-size: 40px;
 		font-family:'poeti-bold';
 		color:#FFFFFF;	
 	}
 	#sharing {
-		top:70px;
+		top:30px;
 		float:right;
 		position: relative;	
 		height:50px;
-		width:60%;
+		width:70%;
 	}
 	.shareTxt {
 		color: #ffffff;
@@ -1467,7 +991,8 @@ input:focus {
 		float:right;
 		text-align:center;
 		position: relative;
-		width:20%;
+		font-family:'poeti';
+		width:14%;
 	}
 	.shareLine {
 		top: 6px;
@@ -1476,7 +1001,7 @@ input:focus {
 		/*display:inline;*/
 		height:1px;
 		background-color:#FFFFFF;
-		width:40%;
+		width:43%;
 	}
 	
 	#sharingBtns {
@@ -1518,10 +1043,1054 @@ input:focus {
 		background-repeat: no-repeat;
     	background-image: url(../img/email.png);
 	}
+	
+	.genderBorderMale {
+		position: relative;
+		height: 118px;
+		width: 118px;
+		border:#BF1067 solid 3px;
+		border-radius:50%;
+		float:right;
+	}
+	
+	.genderBorderFemale {
+		position: relative;
+		height: 120px;
+		width: 120px;
+		border:#BF1067 solid 3px;
+		border-radius:50%;
+		float:left;
+	}
+	
+	#male {
+		position: relative;
+		bottom:8px;
+		right:7px;
+		margin: auto;
+		background-image: url(../img/m.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 120px;
+		width: 104px;
+		float: right;
+		cursor: pointer;
+	}
+	
+	#female {
+		position: relative;
+		bottom:5px;
+		left:5px;
+		margin: auto;
+		background-image: url(../img/f.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 120px;
+		width: 110px;
+		float: left;
+		cursor: pointer;
+	}
+	
+	#genders{
+		position: relative;
+		margin: auto;
+		height: 160px;
+		width: 340px;
+	}
+		
+	#btnbg_start{
+		box-shadow: 0 8px 6px -6px #434141;
+		margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+    	top: 370px;  
+	    position: relative;
+	    width: 442px;
+	    height: 84px;
+	    font-family: 'poeti';
+	    font-size: 4vw;
+	    font-weight: 800;
+		text-align: center;
+		color: #FFFFFF;	
+	}
+	
+	#innerBtnContainer {
+		height: 84px;
+		width: 40%;
+		margin: auto;
+	}
+	
+	#moneyContainer {
+		height: 84px;
+		width: 70%;
+		margin: auto;
+	}
+	
+	#innerBtnLeft {
+		position:relative;
+		top:8px;
+		height:70px;
+		width:70%;
+		float:left;
+		font-size:70px;
+		letter-spacing:-2.5px;
+	}
+	
+	#moneyContainer #innerBtnLeft {
+	    position: relative;
+	    top: 8px;
+	    height: 70px;
+	    width: 30%;
+	    float: left;
+	    font-size: 70px;
+	}
+	
+	#innerBtnRight {
+		height:84px;
+		width:30%;
+		float:right;
+		font-size:50px;
+	}
+	
+	#moneyContainer #innerBtnRight {
+		height:84px;
+		width:70%;
+		float:right;
+		font-size:50px;
+	}
+	
+	#innerBtnYears {
+		width:95%;
+		margin:auto;
+		position: relative;
+		top:8px;
+		background: transparent;
+    	border: none;
+    	font-family: 'poeti';
+	    font-size: 65px;
+	    color:#FFFFFF;
+	    text-align:center;
+	    height:60px;
+	    letter-spacing:-2px;
+	}
+	
+	#btnInputLine {
+		position: relative;
+		bottom:3px;
+		width:95%;
+		margin: auto;
+		height: 5px;
+		background-color:#FFFFFF;
+	}
+		
+	#next_btn {
+	    margin: auto;
+	    font-family: 'poeti-bold';
+	    top: 385px;
+	    position: relative;
+	    text-align: center;
+	    color: #24a499;
+	    width: 442px;
+	    font-size: 2vw;
+	}
+	
+	#topRight {
+		width: 100%;
+	    position: relative;
+	    top: 155px;
+	    margin: auto;
+	}
+	
+	.topRightTxt , #bStart .topRightTxt{
+		float: right;
+	    width: 80%;
+	    text-align: center;
+	    direction: rtl;
+	    right: 8%;
+	    position: relative;
+	    letter-spacing: -1px;
+	    font-size: 20px;
+	}
+	
+	#bIndex .topRightTxt {
+		font-size:15px;
+	}
+	
+	.bQuestions .topRightTxt {
+		float: right;
+	    width: 60%;
+	    text-align: justify;
+	    direction: rtl;
+	    right: 18%;
+	    position: relative;
+	    letter-spacing: -1.5px;
+	}
+	
+	#topRight, #bStart #topRight h3{
+		direction: rtl;
+	    top: 170px;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 20px;
+	}
+	
+	#topRight p {
+		position: relative;
+		top:10px;
+		font-size: 2.5vw;
+	}
+	
+	.bQuestions #topRight h3 {
+		direction: rtl;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 1.8vw;
+	}
+	
+	.bQuestions #arrow {
+		top: 10px;
+	}
+	
+	#arrow {
+		position: relative;
+		float: left;
+		display:inline;
+	    z-index:10;
+	    right: 22px;
+	    width: 44px;
+	    height: 44px;
+	}
+	
+	/* about page style for desktop */
+	#about {
+		background:#24A499;
+	}
+	
+	#about #line {
+		position: relative;
+		text-decoration: none;
+		margin-right:10px;
+		margin-left:10px;
+		margin-top:2px;
+		cursor:default;
+	}
+	
+	#about a {
+		left: 3%;
+		letter-spacing:-1.5px;
+	}
+	
+	#bOpenConc #wrapper, #about #wrapper {
+		position: relative;
+		margin: 0 auto;
+		top:50px;
+		width: 90%;
+	}
+	
+	#bOpenConc #piniContainer, #about #piniContainer {
+		float:right;
+		width: 40%;
+	}
+	
+	#bOpenConc #pini, #about #pini {
+		position: relative;
+		margin: 0 auto;
+		background-image: url(../img/aboutPini1.gif);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 475px;
+	    width: 310px;
+	}
+	
+	#bOpenConc #aboutWrapper, #about #aboutWrapper {
+		float:right;
+		width: 50%;
+	}
+	
+	#aboutWrapper #aboutBox {
+		position: relative;
+		margin: 0 auto;
+		top:30px;
+		background:#ffffff;
+		width:100%;
+		min-height: 400px;
+		/*overflow:hidden;*/
+		border-radius:10px;
+	}
+	
+	#aboutBox #boxArrow {
+		position: relative;
+		float: right;
+		background-image: url(../img/arrow_white.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 44px;
+	    width: 44px;
+	    left:22px;
+	    top:130px;
+	}
+	
+	#shenkar {
+		position: relative;
+		float: right;
+		top:15px;
+		background-image: url(../img/shenkar.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 31px;
+	    width: 105px;
+	}
+	
+	#calcalist {
+		position: relative;
+		float: left;
+		top:19px;
+		background-image: url(../img/calcalist.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 27px;
+	    width: 109px;
+	}
+	
+	#aboutBox h1 {
+		position: relative;
+		top:15px;
+		color:#BF1067;
+		font-size:50px;
+		direction: rtl;
+		text-align:right;
+		line-height:80px;
+		font-family:'poeti-bold';
+		letter-spacing:-3px;
+	}
+	
+	#aboutBox #logos {
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		bottom:0;
+		height: 49px;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	
+	#aboutWrapper #sharing {
+		top:40px;
+		float:right;
+		position: relative;	
+		height:50px;
+		width:100%;
+	}
+	#aboutWrapper .shareTxt {
+		color: #ffffff;
+		font-size:1.4vw;
+		float:right;
+		text-align:center;
+		position: relative;
+		font-family:'poeti';
+		width:10%;
+	}
+	#aboutWrapper .shareLine {
+		top: 7px;
+		float:right;
+		position: relative;
+		/*display:inline;*/
+		height:1px;
+		background-color:#FFFFFF;
+		width:45%;
+	}
+	
+	#aboutWrapper #sharingBtns {
+		position: relative;
+		top:10px;
+		margin: 0 auto;
+		width:160px;
+		height: 40px;
+	}
+	#aboutWrapper .sharingCircle {
+		width:45px;
+		height: 45px;
+	}
+	
+	#aboutWrapper #aboutBox p {
+		position: relative;
+		margin: 0 auto;
+		top:5px;
+		min-height: 260px;
+		/*overflow:hidden;*/
+		width: 90%;
+		color:#BF1067;
+		font-family:'poeti';
+		font-size:20px;
+		direction:rtl;
+		text-align:justify;
+		letter-spacing:-1px;
+	} 
 }
 
 /* tablet */
 @media (max-width: 850px) and (min-width:591px) {
+	#bQuestions #shaulAll {
+		top:300px;
+		position: absolute;
+		left:0;
+		right:0;
+	}
+	
+	#bQuestions #wrapper {
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		top:80px;
+	}
+	
+	#bQuestions .questionWrapper {
+		width:100%;
+		min-height:100px;
+	}
+	
+	.questionWrapper p {
+		position: relative;
+		top:40px;
+		float:right;
+		text-align:right;
+		direction:rtl;
+		font-family:'poeti-bold';
+		color:#BF1067;
+		font-size: 3.5vw;
+		letter-spacing:-1px;
+	}
+	
+	.inputWrapper {
+		position: relative;
+		float:left;
+		border-radius:2px;
+		background:#24A499;
+		width: 120px;
+    	height: 40px;
+    	top:30px;
+	}    
+	
+	#bQuestions #innerBtnContainer {
+		height: 40px;
+		width: 85%;
+		margin: auto;
+	}
+	
+	#bQuestions .innerBtnLeft {
+		position:relative;
+		top:6px;
+		width:30%;
+		float:left;
+		font-size:30px;
+		font-family:'poeti-bold';
+		color:#FFFFFF;
+	}
+	
+	#bQuestions .innerBtnLeft #years {
+		width:70%;
+	}
+	
+	#bQuestions .innerBtnRight {
+		height:40px;
+		width:70%;
+		float:right;
+		font-size:30px;
+	}
+	
+	#bQuestions .innerBtnRightYears {
+		width:30%;
+		height:40px;
+		float:right;
+		font-size:30px;
+	}
+	
+	#bQuestions #innerBtnYears {
+	    width: 95%;
+	    margin: auto;
+	    position: relative;
+	    top:1px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 30px;
+	}
+	
+	#bQuestions #inputLineYears {
+	    position: relative;
+	    bottom: 6px;
+	    width: 95%;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #FFFFFF;
+	}
+	
+	#bQuestions .innerBtnMoney {
+	    width: 100%;
+	    margin: auto;
+	    position: relative;
+	    top:1px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 30px;
+	}
+	
+	#bQuestions #inputLineMoney {
+	    position: relative;
+	    bottom: 6px;
+	    width: 100%;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #FFFFFF;
+	}
+	
+	#assumptionQuestion {
+		top:20px;
+	}
+	
+	/* seperator line*/
+	#bQuestions .hrLine{
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 100%;
+	}
+	
+	#bQuestions #btnback_start {
+		margin: auto;
+	    background: #939393;
+	    border-radius: 5px;
+	    position: relative;
+	    box-shadow: 0 8px 6px -6px #434141;
+	    width:100%;
+	    height: 80px;
+	    cursor: pointer;
+	    top:30px;
+	    margin-bottom:20px;
+	    cursor: default;
+	}
+	
+	#bQuestions #topRight {
+		top:150px;
+	}
+	
+	#bQuestions #topRight p {
+	    position: relative;
+	    text-align: right;
+	    font-size: 2.5vw;
+	    width:80%;
+	}
+	
+	.genderBorderMale {
+		position: relative;
+		height: 118px;
+		width: 118px;
+		border:#BF1067 solid 3px;
+		border-radius:50%;
+		float:right;
+	}
+	
+	.genderBorderFemale {
+		position: relative;
+		height: 120px;
+		width: 120px;
+		border:#BF1067 solid 3px;
+		border-radius:50%;
+		float:left;
+	}
+	
+	#male {
+		position: relative;
+		bottom:8px;
+		right:7px;
+		margin: auto;
+		background-image: url(../img/m.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 120px;
+		width: 104px;
+		float: right;
+		cursor: pointer;
+	}
+	
+	#female {
+		position: relative;
+		bottom:5px;
+		left:5px;
+		margin: auto;
+		background-image: url(../img/f.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 120px;
+		width: 110px;
+		float: left;
+		cursor: pointer;
+	}
+	
+	#bQuestions #genders{
+		position: relative;
+		margin: 0 auto;
+		margin: auto;
+		height: 140px;
+		width: 300px;
+	}
+	
+	#bIndex #wrapper {
+		position: relative;
+		top:50px;
+	}
+	#entrance #tltContainer {
+	    position: relative;
+	    width: 100%;
+	}
+	
+	#entrance #tltContainer p {
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 4vw;
+	    /* top: 30px; */
+	    position: relative;
+	    width: 100%;
+	    letter-spacing: -2.5px;
+	}
+	
+	#credits {
+		position: relative;
+		margin:0 auto;
+		direction: rtl;
+		text-align: center;
+		width:80%;
+		font-family:'poeti-bold';
+		font-size:2.5vw;
+		top:160px;
+		color:#555454;
+		padding-bottom:20px;
+	}
+	
+	.creditPink {
+		display:inline;
+		color:#BF1067;
+	}
+	
+	.creditBlue {
+		display:inline;
+		color:#24A499;
+	}
+	
+	#bStart #lower_text {
+	    margin: auto;
+	    font-family: 'poeti';
+	    top: 180px;
+	    position: relative;
+	    text-align: center;
+	    width: 380px;
+	    font-size: 20px;
+	    direction: rtl;
+	    color: #000000;
+	    letter-spacing: -1px;
+	}
+	
+	nav {
+		font-family: 'poeti';
+	    font-size: 30px;
+	    text-align: center;
+	    float: left;
+	    position: relative;
+	    top: 1.0046875%;
+	    left: 3.3046875%;
+	    direction: rtl;
+	}
+
+	.oNav a {
+	    width: 100px;
+	    height: 60px;
+	    margin: auto;
+	    top: 100px;
+	    font-family: 'poeti';
+	    position: relative;
+	    top: 0px;
+	    display: inline;
+	    color: #24a499;
+	    text-decoration: underline;
+	    font-size: 3vw;
+	    letter-spacing: -1px;
+	}
+	
+	#bOpenConc #right {
+	    float: right;
+	    background: #24a499;
+	    position: relative;
+	    width: 32.8125%;
+	    top: 0px;
+	    bottom: 0px;
+	    right: 0px;
+	}
+	
+	#bOpenConc #entrance {
+	    margin: auto;
+	    text-align: justify;
+	    direction: rtl;
+	    font-family: 'poeti';
+	    font-size: 3.6vw;
+	    /*top: 120px;*/
+	    position: relative;
+	    width: 90%;
+	    color: #FFFFFF;
+	    top:20px;
+	}
+	
+	#bOpenConc #entrance p {
+	    position: relative;
+	    margin: auto;
+	    width: 100%;
+	    min-height: 220px;
+	    color: #FFFFFF;
+	    font-size: 4vw;
+	    text-align: justify;
+	    letter-spacing: -2px;
+	}
+	
+	#bOpenConc #btnbg_start p {
+		top: 10px;
+		position: relative;
+		font-size: 40px;	
+	}
+	
+	#bOpenConc #btnbg_start {
+	    margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+	    top: 0;
+	    position: relative;
+	    width: 90%;
+	    height: 60px;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    font-weight: 800;
+	    text-align: center;
+	    color: #FFFFFF;
+	}
+	
+	#bOpenConc #shaulAll {
+	    top: 120px;
+	    margin: auto;
+	    position: relative;
+	    width: 206px;
+	}
+	
+	#bOpenConc #shauPic {
+	    background-image: url(../img/shaul_small.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 140px;
+	    width: 120px;
+	}
+	
+
+	#bStart #entrance h1{
+		margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 35px;
+	    top: 159px;
+	    position: relative;
+	    width: 60%;
+	    left: 1%;
+	}
+	#entrance h1{
+	    right: 5%;
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 8.5vw;
+	    top: 159px;
+	    position: relative;
+	    width: 77%;
+	    letter-spacing: -3px;
+	}
+	
+	.bQuestions #entrance h1 {
+		margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 8vw;
+	    top: 159px;
+	    position: relative;
+	    width: 80%;
+	    height: 141px;
+	    letter-spacing:-2.5px;
+	}
+	
+	#entrance {
+	    position: relative;
+	    width: 100%;
+	}
+	
+	#presentation {
+	    margin: auto;
+	    direction: rtl;
+	    text-align: justify;
+    	letter-spacing: -1.5px;
+	    font-family: 'poeti';
+	    font-size: 3vw;
+	    position: relative;
+	    width: 75%;
+	    top:80px;
+	    height: 141px;
+	    color: #555454;
+	}
+	
+	#btnback_start {
+	    top: 130px;
+	}
+	
+	#entrance p {
+	    margin: 0 auto;
+	    direction: rtl;
+	    text-align: center;
+	    letter-spacing: -1.5px;
+	    font-family: 'poeti';
+	    font-size: 2.8vw;
+	    position: relative;
+	    top: 25px;
+	    color: #555454;
+	}
+	
+	#bStart #presentation {
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti';
+	    font-size: 22.5px;
+	    top: 170px;
+	    position: relative;
+	    width: 380px;
+	    color: #555454;
+	}
+	
+	#bStart #btnback_start {
+		margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+	    top: 150px;
+	    position: relative;
+	    width: 70%;
+	    height: 70px;
+	    box-shadow: 0 8px 6px -6px #434141;
+	}
+	
+	#bStart #btnback_start p {
+		font-size:50px;
+	}
+	
+	.progressCircles {
+		top: 330px;
+	    margin: auto;
+	    position: relative;
+	    width: 84px;
+	    height: 21px;
+	}
+	
+	.progressCircle {
+		width: 8px;
+		height: 8px;
+		border-radius: 50px;
+		border: 4px solid #BF1067;
+		float: left;
+		margin-right: 6px;
+		margin-left: 6px;
+	}
+	
+	.filledCircle{
+		background: #BF1067;
+	}
+	
+	#btnbg_start{
+		box-shadow: 0 8px 6px -6px #434141;
+		margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+    	top: 300px;  
+	    position: relative;
+	    width: 300px;
+	    height: 84px;
+	    font-family: 'poeti';
+	    font-size: 4vw;
+	    font-weight: 800;
+		text-align: center;
+		color: #FFFFFF;	
+	}
+	
+	#innerBtnContainer {
+		height: 84px;
+		width: 50%;
+		margin: auto;
+	}
+	
+	#moneyContainer {
+		height: 84px;
+		width: 70%;
+		margin: auto;
+	}
+	
+	#innerBtnLeft {
+		position: relative;
+	    top: 8px;
+	    height: 70px;
+	    width: 30%;
+	    float: left;
+	    font-size: 70px;
+	}
+	
+	#innerBtnLeft p {
+		position: relative;
+		top:15px;
+		font-size:50px;	
+		letter-spacing:-2px;
+	}
+	
+	#innerBtnRight {
+		height:84px;
+		width:70%;
+		float:right;
+		font-size:50px;
+	}
+	
+	#moneyContainer #innerBtnRight {
+		height:84px;
+		width:70%;
+		float:right;
+		font-size:50px;
+	}
+	
+	#innerBtnYears {
+		width: 40%;
+	    margin: auto;
+	    position: relative;
+	    top: 8px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 50px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 60px;
+	    margin-right:20px;
+	}
+	
+	#btnInputLine {
+		position: relative;
+		bottom:3px;
+		width:40%;
+		margin: auto;
+		height: 5px;
+		background-color:#FFFFFF;
+		margin-right:20px;
+	}
+		
+	#next_btn {
+	    margin: auto;
+	    font-family: 'poeti-bold';
+	    top: 320px;
+	    position: relative;
+	    text-align: center;
+	    color: #24a499;
+	    width: 442px;
+	    font-size: 3vw;
+	}
+	
+	.bQuestions #topRight {
+		top: 130px;
+	}
+	#topRight {
+		direction: rtl;
+	    top: 170px;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 20px;
+	}
+	
+	.topRightTxt , #bStart .topRightTxt{
+	    float: right;
+	    width: 80%;
+	    text-align: center;
+	    direction: rtl;
+	    right: 8%;
+	    position: relative;
+	    letter-spacing: -1px;
+	}
+	
+	#topRight p {
+		position: relative;
+		top:15px;
+		font-size: 20px;
+	}
+	
+	.bQuestions .topRightTxt {
+	    width: 70%;
+	    text-align: justify;
+	    direction: rtl;
+	    position: relative;
+	    margin: auto;
+	}
+	
+	#topRight h3 , #bStart #topRight h3{
+		position: relative;
+	    display: inline;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 23px;
+	}
+	
+	.bQuestions #topRight h3 {
+		direction: rtl;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 18px;
+	}
+	
+	.bQuestions #arrow {
+		display:none;
+	}
+	
+	#arrow {
+		position: relative;
+		margin: 0 auto;
+		float: left;
+		display:inline;
+	    right: 22px;
+	    width: 44px;
+	    height: 44px;
+	}
+	
 	#resultsWrapper {
 		position:relative;
 		width:549.5px;
@@ -1547,17 +2116,20 @@ input:focus {
 	/* Shaul's logo */
 	#shaul {
 		margin: auto;
+		background-image: url(../img/piniTablet.gif);
+		background-size: contain;
+		background-repeat: no-repeat;
 		width:120px;
 		height:189px;
 	}
 	
 	#shauPic {
 		margin: auto;
-		background-image: url(../img/shaul_small.png);
+		background-image: url(../img/piniTablet.gif);
 		background-size: contain;
 		background-repeat: no-repeat;
-		height: 140px;
-		width: 120px;
+		width:120px;
+		height:189px;
 	}
 	
 	#shaulTxt {
@@ -1576,7 +2148,7 @@ input:focus {
 		float:left;
 		border-radius: 10px;
 		height: 139px;
-		width: 317.5px;
+		width: 337.5px;
 		top:30px;
 		left: 30px;
 		background-color:#BF1067;
@@ -1602,6 +2174,7 @@ input:focus {
 		font-family: 'poeti';
 		font-size: 3vw;
 		color: #BF1067;
+		letter-spacing: -1px;
 	}
 	
 	/* pension text container */
@@ -1650,6 +2223,7 @@ input:focus {
 		font-family: 'poeti';
 		font-size: 3vw;
 		color: #ffffff;
+		letter-spacing: -1px;
 	}
 	
 	/* pension text container */
@@ -1673,10 +2247,10 @@ input:focus {
 	}
 	
 	.bigger {
-		width: 60%;
+		width: 55%;
 	}
 	.smaller {
-		width: 40%;
+		width: 45%;
 	}
 	
 	#resultsArrow {
@@ -1686,7 +2260,7 @@ input:focus {
 		width: 44px;
 		height: 44px;
 		top: 50px;
-		left:295.5px;
+		left:315.5px;
 	}
 	
 	.whiteArrow {
@@ -1757,7 +2331,7 @@ input:focus {
 	.questionContainer {
 		position: relative;
 		width: 100%;
-		height: 40px;
+		min-height:40px;
 	}
 	.questionContainer p {
 		position: relative;
@@ -1768,12 +2342,12 @@ input:focus {
 		font-family: 'poeti-bold';
 		color:#BF1067;
 		font-size: 4vw;
-		margin-bottom: 10px;
+		margin-bottom: 10px;	
 	}
 	.expContainer {
 		position: relative;
 		width: 100%;
-		height: 100px;
+		min-height: 110px;
 	}
 	/* question explanation text */
 	.expContainer p {
@@ -1784,7 +2358,7 @@ input:focus {
 		text-align:right;
 		font-family: 'poeti';
 		color:#434141;
-		font-size: 3vw;
+		font-size: 17.5px;
 		margin-bottom: 10px;
 	}
 	/* define slider positions */
@@ -1795,11 +2369,1019 @@ input:focus {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		font-family: Arial;
+		min-height:180px;
+	}
+	
+	/* conclusion page style for tablet */
+	#conclusion {
+		background-color:#24A499;
+	}
+	#conclusionContainer{
+		position: relative;
+		margin: 0 auto;
+		width:90%;
+		top:50px;
+		/*height:530px;*/
+		font-family: 'poeti';
+		direction:rtl;
+	}
+	
+	#TxtContainer {
+		position: relative;
+		float: right;
+		width: 50%;
+	}
+	
+	#conclusionContainer .smallTlt{
+		font-family: 'poeti-bold';
+		color:#BF1067;
+		font-size:20px;
+		width: 100%;
+		text-align:right;
+	}
+	#conclusionContainer .bigTlt{
+		color:#BF1067;
+		font-size:30px;
+		font-family: 'poeti-bold';
+		width: 100%;
+		text-align:right;
+	}
+	#conclusionContainer .txt{
+		text-align:justify;
+		position: relative;
+		top: 30px;
+		width: 95%;
+		height:200px;
+		color:#ffffff;
+		font-size:20px;
+	}
+	#conclusionContainer .continueBtn {
+		position: relative;
+		float: left;
+		top: 85px;
+		width: 45%;
+		height: 76px;
+		background-color:#BF1067;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 8px 6px -6px #434141;
+		cursor: pointer;
+	}
+	#conclusionContainer .continueBtnTxt {
+		position: relative;
+		margin: auto;
+		top: 20px;
+		font-size: 35px;
+		font-family:'poeti-bold';
+		color:#FFFFFF;	
+	}
+	#sharing {
+		top:80px;
+		float:left;
+		position: relative;	
+		height:50px;
+		width:45%;
+	}
+	.shareTxt {
+		color: #ffffff;
+		font-size:2vw;
+		float:right;
+		text-align:center;
+		position: relative;
+		width:20%;
+	}
+	.shareLine {
+		top: 6px;
+		float:right;
+		position: relative;
+		/*display:inline;*/
+		height:1px;
+		background-color:#FFFFFF;
+		width:40%;
+	}
+	
+	#sharingBtns {
+		position: relative;
+		top:10px;
+		margin: 0 auto;
+		width:200px;
+		height: 40px;
+	}
+	.sharingCircle {
+		position: relative;
+		border-radius:50%;
+		height:40px;
+		width:40px;
+		background-color:#BF1067;
+		float: right;
+		margin-right:7px;
+		cursor:pointer;
+		box-shadow: 0 8px 6px -6px #434141;
+	}
+	
+	.whatsapp {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/whatsapp.png);
+	}
+	.facebook {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/face.png);
+	}
+	.excell {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/excell.png);
+	}
+	.email {
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-image: url(../img/email.png);
+	}
+	/* about page style for tablet */
+	#about {
+		background:#24A499;
+	}
+	
+	#about #line {
+		position: relative;
+		text-decoration: none;
+		margin-right:10px;
+		margin-left:10px;
+		margin-top:2px;
+		cursor:default;
+	}
+	
+	#about #aboutLink {
+		display:block;
+		width:100%;
+		height:30px;
+		position: relative;
+	    margin: auto;
+	    direction: rtl;
+	    color:#ffffff;
+	}
+	
+	#about a {
+		position: relative;
+		top: 30px;
+	    /*left: 10%;*/
+		font-family: 'poeti';
+		float: left;
+	    font-size: 3vw;
+	    color: #FFFFFF;
+		left: 10%;
+		letter-spacing:-2.3px;
+	}
+	
+	#bOpenConc #wrapper, #about #wrapper {
+		position: relative;
+		margin: 0 auto;
+		top:50px;
+		width: 100%;
+	}
+	
+	#bOpenConc #piniContainer, #about #piniContainer {
+		float:right;
+		width: 40%;
+	}
+	
+	#bOpenConc .oNav {
+		position: relative;
+		top:30px;
+	}
+	
+	#bOpenConc #pini, #about #pini {
+		position: relative;
+		margin: 0 auto;
+		background-image: url(../img/piniDesktop.gif);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 334px;
+	    width: 228px;
+	}
+	
+	#bOpenConc #aboutWrapper, #about #aboutWrapper {
+		float:right;
+		width: 60%;
+	}
+	
+	#aboutWrapper #aboutBox {
+		position: relative;
+		margin: 0 auto;
+		top:30px;
+		background:#ffffff;
+		width:95%;
+		min-height:300px;
+		border-radius:10px;
+	}
+	
+	#aboutBox #boxArrow {
+		position: relative;
+		float: right;
+		background-image: url(../img/arrow_white.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 44px;
+	    width: 44px;
+	    left:22px;
+	    top:130px;
+	}
+	
+	#shenkar {
+		position: relative;
+		float: right;
+		top:15px;
+		background-image: url(../img/shenkar.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 31px;
+	    width: 105px;
+	}
+	
+	#calcalist {
+		position: relative;
+		float: left;
+		top:19px;
+		background-image: url(../img/calcalist.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 27px;
+	    width: 109px;
+	}
+	
+	#aboutBox h1 {
+		position: relative;
+		top:5px;
+		color:#BF1067;
+		font-size:4.5vw;
+		direction: rtl;
+		text-align:right;
+		line-height:40px;
+		font-family:'poeti-bold';
+		letter-spacing:-3px;
+	}
+	
+	#aboutBox p {
+		position: relative;
+		margin: 0 auto;
+		top:8px;
+		min-height: 200px;
+		width: 90%;
+		color: #BF1067;
+		font-family: 'poeti';
+		direction:rtl;
+		text-align:justify;
+		font-size:15px;
+	}
+	
+	#aboutBox #logos {
+		padding-top:5px;
+		padding-bottom:5px;
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		bottom:0;
+		height: 49px;
+	}
+	
+	#aboutWrapper #sharing {
+		float:right;
+		top:40px;
+		position: relative;	
+		right:2%;
+		height:50px;
+		width:100%;
+	}
+	#aboutWrapper .shareTxt {
+		color: #ffffff;
+		font-size:2.3vw;
+		float:right;
+		text-align:center;
+		position: relative;
+		font-family:'poeti';
+		width:10%;
+	}
+	#aboutWrapper .shareLine {
+		top: 7px;
+		float:right;
+		position: relative;
+		/*display:inline;*/
+		height:1px;
+		background-color:#FFFFFF;
+		width:42%;
+	}
+	
+	#aboutWrapper #sharingBtns {
+		position: relative;
+		top:10px;
+		margin: 0 auto;
+		width:160px;
+		height: 40px;
+		left:4%;
+	}
+	#aboutWrapper .sharingCircle {
+		width:45px;
+		height: 45px;
 	}
 }
 
 /* mobile*/
 @media (max-width: 590px) {
+	#bQuestions #btnback_start {
+		margin: auto;
+	    background: #939393;
+	    border-radius: 5px;
+	    position: relative;
+	    box-shadow: 0 8px 6px -6px #434141;
+	    width:100%;
+	    height: 80px;
+	    cursor: pointer;
+	    top:30px;
+	    margin-bottom:20px;
+	    cursor: default;
+	}
+	
+	#bQuestions #btnback_start p{
+		font-family: 'poeti';
+		font-size: 60px;
+	    font-weight: 800;
+		text-align: center;
+		color: #FFFFFF;
+		padding-top: 15px;
+	}
+	
+	#bQuestions #topRight {
+	    direction: rtl;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 20px;
+	    top:15px;
+	}
+	
+	#bQuestions #wrapper {
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		top:80px;
+	}
+	
+	#bQuestions .questionWrapper {
+		width:100%;
+		min-height:100px;
+	}
+	
+	.questionWrapper p {
+		position: relative;
+		top:40px;
+		float:right;
+		text-align:right;
+		direction:rtl;
+		font-family:'poeti-bold';
+		color:#BF1067;
+		font-size: 3.5vw;
+		letter-spacing:-1px;
+	}
+	
+	.inputWrapper {
+		position: relative;
+		float:left;
+		border-radius:2px;
+		background:#24A499;
+		width: 110px;
+    	height: 40px;
+    	top:30px;
+	}    
+	
+	#bQuestions #innerBtnContainer {
+		height: 40px;
+		width: 85%;
+		margin: auto;
+	}
+	
+	#bQuestions .innerBtnLeft {
+		position:relative;
+		top:6px;
+		width:30%;
+		float:left;
+		font-size:30px;
+		font-family:'poeti-bold';
+		color:#FFFFFF;
+	}
+	
+	#bQuestions .innerBtnLeft #years {
+		width:70%;
+	}
+	
+	#bQuestions .innerBtnRight {
+		height:40px;
+		width:70%;
+		float:right;
+		font-size:30px;
+	}
+	
+	#bQuestions .innerBtnRightYears {
+		width:30%;
+		height:40px;
+		float:right;
+		font-size:30px;
+	}
+	
+	#bQuestions #innerBtnYears {
+	    width: 95%;
+	    margin: auto;
+	    position: relative;
+	    top:1px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 30px;
+	}
+	
+	#bQuestions #inputLineYears {
+	    position: relative;
+	    bottom: 6px;
+	    width: 95%;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #FFFFFF;
+	}
+	
+	#bQuestions .innerBtnMoney {
+	    width: 100%;
+	    margin: auto;
+	    position: relative;
+	    top:1px;
+	    background: transparent;
+	    border: none;
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    color: #FFFFFF;
+	    text-align: center;
+	    height: 30px;
+	}
+	
+	#bQuestions #inputLineMoney {
+	    position: relative;
+	    bottom: 6px;
+	    width: 100%;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #FFFFFF;
+	}
+	
+	#assumptionQuestion {
+		top:20px;
+	}
+	
+	/* seperator line*/
+	#bQuestions .hrLine{
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 100%;
+	}
+	
+	#bQuestions #arrow{
+		display:none;
+	}
+	   
+	#bQuestions #topRight p {
+		display: block;
+	    position: relative;
+	    text-align: right;
+	    font-size: 20px;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	
+	.genderBorderMale {
+		position: relative;
+		height: 118px;
+		width: 118px;
+		border:#BF1067 solid 3px;
+		border-radius:50%;
+		float:right;
+	}
+	
+	.genderBorderFemale {
+		position: relative;
+		height: 120px;
+		width: 120px;
+		border:#BF1067 solid 3px;
+		border-radius:50%;
+		float:left;
+	}
+	
+	#male {
+		position: relative;
+		bottom:8px;
+		right:7px;
+		margin: auto;
+		background-image: url(../img/m.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 120px;
+		width: 104px;
+		float: right;
+		cursor: pointer;
+	}
+	
+	#female {
+		position: relative;
+		bottom:5px;
+		left:5px;
+		margin: auto;
+		background-image: url(../img/f.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 120px;
+		width: 110px;
+		float: left;
+		cursor: pointer;
+	}
+	
+	#bQuestions #genders{
+		position: relative;
+		margin: auto;
+		height: 140px;
+		width: 300px;
+	}
+	#credits {
+		position: relative;
+		margin:0 auto;
+		direction: rtl;
+		text-align: center;
+		width:80%;
+		font-family:'poeti-bold';
+		font-size:15px;
+		top:80px;
+		color:#555454;
+		padding-bottom:20px;
+	}
+	
+	.creditPink {
+		display:inline;
+		color:#BF1067;
+	}
+	
+	.creditBlue {
+		display:inline;
+		color:#24A499;
+	}
+	#bIndex #wrapper {
+		position: relative;
+		/*top:50px;*/
+		min-height:400px;
+	}
+	
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#entrance {
+	    position: relative;
+	    width: 100%;
+	}
+	#entrance #tltContainer {
+	    position: relative;
+	    width: 100%;
+	}
+	#entrance #tltContainer p {
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 8vw;
+	   	top: 10px; 
+	    min-height:50px;
+	    position: relative;
+	    width: 100%;
+	    letter-spacing: -1px;
+	}
+	
+	#entrance p {
+	    margin: 0 auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti';
+	    font-size: 6vw;
+	    position: relative;
+	    top: 20px;
+	    color: #555454;
+	}
+	#topRight p {
+	    display:none;
+	}
+	#left {
+		position: relative;
+		width: 100%
+	}
+	#right {
+	    background: #24a499;
+	    position: relative;
+	    height: 150px;
+	    width: 100%;
+	}
+	
+	#bIndex #right {
+	    background: #24a499;
+	    position: relative;
+	    height: 60px;
+	    width: 100%;
+	}
+	
+	.bQuestions #right {
+	    background: #24a499;
+	    position: relative;
+	    height: 180px;
+	    width: 100%;
+	}
+	
+	.bQuestions .topRightTxt{
+		text-align:center;
+		direction:rtl;
+		position: relative;
+		height: 80px;
+		width: 270px;
+		margin: auto;
+		letter-spacing: -1px;
+	}
+	
+	/* seperator line*/
+	#bQuestions .hrLine{
+		position: relative;
+		margin: auto;
+		background-color: #cecece;
+		height: 1px;
+		width: 100%;
+	}
+	
+	#bQuestions #wrapper {
+		position: relative;
+		width:90%;
+		margin: 0 auto;
+		top: 30px;
+	}
+	
+	#bQuestions .questionWrapper {
+		width:100%;
+		min-height:80px;
+	}
+	
+	#bQuestions #right {
+		height:140px;
+	}
+	
+	.questionWrapper p {
+		font-family:'poeti-bold';
+		color:#BF1067;
+		font-size: 5vw;
+	}
+	
+	.bQuestions #btnbg_start{
+		margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+    	top: 180px;  
+	    position: relative;
+	    width: 200px;
+	    height: 54px;
+	    font-family: 'poeti';
+	    font-size: 4vw;
+	    font-weight: 800;
+		text-align: center;
+		color: #FFFFFF;	
+		box-shadow: 0 8px 6px -6px #434141;
+	}
+	
+	#btnbg_start{
+		margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+    	top: 80px;  
+	    position: relative;
+	    width: 200px;
+	    height: 54px;
+	    font-family: 'poeti';
+	    font-size: 4vw;
+	    font-weight: 800;
+		text-align: center;
+		color: #FFFFFF;	
+	}
+	
+	#bStart #btnback_start {
+		box-shadow: 0 8px 6px -6px #434141;
+		cursor: pointer;
+	    margin: auto;
+	    background: #BF1067;
+	    border-radius: 10px;
+	    top: 10px;
+	    position: relative;
+	    width: 70%;
+	    height: 50px;
+	}
+	
+	#btnback_start{
+		margin: auto;
+	    background: #BF1067;
+	    border-radius: 5px;
+	    top: 60px;
+	    position: relative;
+	    box-shadow: 0 8px 6px -6px #434141;
+	    width:75%;
+	    height: 60px;
+	    cursor: pointer;
+	}
+
+	#btnback_start p {
+	    direction: rtl;
+	    font-family: 'poeti';
+	    font-size: 50px;
+	    font-weight: 800;
+	    text-align: center;
+	    color: #FFFFFF;
+	    padding-top: 5px;
+	}
+	
+	#bStart #lower_text {
+	    margin: auto;
+	    font-family: 'poeti';
+	    top: 30px;
+	    position: relative;
+	    text-align: justify;
+	    width: 70%;
+	    font-size: 18px;
+	    direction: rtl;
+	    color: #000000;
+	    letter-spacing: -1px;
+	}
+	
+	#innerBtnContainer {
+		height: 54px;
+		width: 50%;
+		margin: auto;
+	}
+	
+	#moneyContainer {
+		height: 84px;
+		width: 70%;
+		margin: auto;
+	}
+	
+	#innerBtnLeft {
+		position:relative;
+		top:8px;
+		width:65%;
+		float:left;
+		font-size:35px;
+		letter-spacing:-1.5px;
+	}
+	
+	#moneyContainer #innerBtnLeft {
+		position:relative;
+		top:8px;
+		width:35%;
+		float:left;
+		font-size:30px;
+	}
+	
+	#innerBtnRight {
+		height:54px;
+		width:35%;
+		float:right;
+		font-size:35px;
+	}
+	
+	#moneyContainer #innerBtnRight {
+		height:54px;
+		width:65%;
+		float:right;
+		font-size:30px;
+	}
+	
+	#innerBtnYears {
+		top:5px;
+		width:95%;
+		margin:auto;
+		position: relative;
+		background: transparent;
+    	border: none;
+    	font-family: 'poeti';
+	    font-size: 35px;
+	    color:#FFFFFF;
+	    text-align:center;
+	    letter-spacing:-1px;
+	}
+	
+	#btnInputLine {
+		position: relative;
+		bottom:3px;
+		width:95%;
+		margin: auto;
+		height: 3px;
+		background-color:#FFFFFF;
+	}
+	
+	.bQuestions #next_btn {
+		top:195px;
+	}
+		
+	#next_btn {
+	    margin: auto;
+	    font-family: 'poeti-bold';
+	    top: 105px;
+	    position: relative;
+	    text-align: center;
+	    color: #24a499;
+	    font-size: 20px;
+	}
+	#topRight {
+	    top: 30px;
+	    position: relative;
+	    text-align: center;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	}
+	
+	.oNav {
+		display: none;
+	}
+	
+	#bOpenConc .oNav {
+		position: relative;
+		font-size:10vw;
+		display: block;
+	}
+	
+	#bOpenConc .oNav a{
+		position: relative;
+		font-size:6vw;
+	}
+	
+	nav {
+	    font-family: 'poeti';
+	    font-size: 30px;
+	    text-align: center;
+	    position: relative;
+	    /*top: 1.0046875%;
+	    left: 3.3046875%;*/
+	    direction: rtl;
+	}
+	
+	.oNavRight {
+		display:block;
+	}
+	
+	.oNavRight a{
+		letter-spacing: -1px;
+		color: #FFFFFF;
+		width:100px;
+		height:60px;
+		margin: auto;
+		font-family: 'poeti';
+		position: relative;
+		display: inline;
+		text-decoration: underline;
+		font-size: 20px;
+	}
+	
+	#topRight h3 {
+		position: relative;
+		display: inline;
+		margin: 0 auto;
+	    font-family: 'poeti';
+		color: #FFFFFF;
+		font-size: 30px;
+		letter-spacing: -1.5px;
+	}
+	
+	.bQuestions #topRight h3 {
+		height: 80px;
+		direction: rtl;
+	    position: relative;
+	    display: inline;
+	    margin: 0 auto;
+	    font-family: 'poeti';
+	    color: #FFFFFF;
+	    font-size: 22px;
+	}
+	
+	#arrow {
+		position: relative;
+		margin: auto;
+	    width: 44px;
+	    height: 44px;
+	    margin-top: 36px;
+	}
+	
+	.bQuestions #arrow {
+	    position: relative;
+	    margin: auto;
+	    width: 44px;
+	    height: 44px;
+	    margin-top: 18px;
+	}
+
+	 #entrance {
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 16.5vw;
+	    top: 30px;
+	    position: relative;
+	    width: 77%;
+	}
+	
+	#bStart #entrance h1{
+		letter-spacing: -2px;
+		top: 30px;
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 10vw;
+	    position: relative;
+	    height: 130px;
+	}
+		
+	.bQuestions #entrance h1{
+		top: 30px;
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti-bold';
+	    color: #BF1067;
+	    font-size: 11.5vw;
+	    position: relative;
+	    height: 100px;
+	    letter-spacing:-2px;
+	}
+	
+	 #presentation {
+		text-align: justify;
+		letter-spacing: -1.5px;
+		height: 220px;
+		margin: auto;
+	    direction: rtl;
+	    font-family: 'poeti';
+	    font-size: 20px;
+	    top: 70px;
+	    position: relative;
+	    width: 70%;
+	    color: #555454;
+	    min-height:200px;
+	    padding-bottom:10px;
+	}
+	
+	#bStart #presentation {
+	    height: 120px;
+	    margin: auto;
+	    direction: rtl;
+	    text-align: center;
+	    font-family: 'poeti';
+	    font-size: 7.2vw;
+	    top: 45px;
+	    position: relative;
+	    width: 77%;
+	    color: #555454;
+	}
+		
+	/*Bottom progress circles*/ 
+	.progressCircles {
+		top: 110px;
+	    margin: auto;
+	    position: relative;
+	    width: 84px;
+	    height: 21px;
+	}
+	
+	.progressCircle {
+		width: 8px;
+		height: 8px;
+		border-radius: 50px;
+		border: 4px solid #BF1067;
+		float: left;
+		margin-right: 6px;
+		margin-left: 6px;
+	}
+	
+	.filledCircle{
+		background: #BF1067;
+	}
+		
 	#resultsWrapper {
 		position:relative;
 		width: 100%;
@@ -1828,7 +3410,7 @@ input:focus {
 		margin: 0 auto;
 		border-radius: 10px;
 		height: 130px;
-		width: 80%;
+		width: 85%;
 		top:15px;
 		background-color:#BF1067;
 	}
@@ -1851,7 +3433,7 @@ input:focus {
 		top: 15px;
 		text-align: center;
 		font-family: 'poeti';
-		font-size: 5vw;
+		font-size: 4.5vw;
 		color: #BF1067;
 	}
 	
@@ -1899,7 +3481,7 @@ input:focus {
 		top: 15px;
 		text-align: center;
 		font-family: 'poeti';
-		font-size: 5vw;
+		font-size: 4.5vw;
 		color: #ffffff;
 	}
 	
@@ -1979,9 +3561,6 @@ input:focus {
 	#result {
 		position: fixed;
 		z-index: 10000;
-		/*left: 0;
-		top: 0;
-		bottom: 0;*/
 		top:0px;
 		width: 100%;
 		height: 160px;
@@ -2016,7 +3595,8 @@ input:focus {
 	.expContainer {
 		position: relative;
 		width: 100%;
-		height: 120px;
+		height: 140px;
+		overflow:hidden;
 	}
 	/* question explanation text */
 	.expContainer p {
@@ -2027,7 +3607,7 @@ input:focus {
 		text-align:right;
 		font-family: 'poeti';
 		color:#434141;
-		font-size: 4.5vw;
+		font-size: 4vw;
 		margin-bottom: 10px;
 	}
 	/* define slider positions */
@@ -2038,6 +3618,97 @@ input:focus {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		font-family: Arial;
+	}
+	
+	/* conclusion page style for mobile */
+	#conclusion {
+		background-color:#24A499;
+	}
+	
+	#conclusionContainer{
+		position: relative;
+		margin: 0 auto;
+		top: 20px;
+		width:75%;
+		/*height:530px;*/
+		font-family: 'poeti';
+		direction:rtl;
+	}
+	
+	#conclusionContainer .smallTlt{
+		font-family: 'poeti-bold';
+		color:#BF1067;
+		font-size:6vw;
+		width: 100%;
+		text-align:right;
+	}
+	#conclusionContainer .bigTlt{
+		color:#BF1067;
+		font-size:7vw;
+		font-family: 'poeti-bold';
+		width: 100%;
+		text-align:right;
+	}
+	#conclusionContainer .txt{
+		text-align:justify;
+		position: relative;
+		top: 20px;
+		width: 100%;
+		height:170px;
+		color:#ffffff;
+		font-size:18px;
+	}
+	#conclusionContainer .continueBtn {
+		position: relative;
+		float: right;
+		top: 30px;
+		width: 100%;
+		height: 56px;
+		background-color:#BF1067;
+		border-radius: 10px;
+		text-align: center;
+		box-shadow: 0 8px 6px -6px #434141;
+		cursor: pointer;
+	}
+	#conclusionContainer .continueBtnTxt {
+		position: relative;
+		margin: auto;
+		top: 15px;
+		font-size: 6vw;
+		font-family:'poeti-bold';
+		color:#FFFFFF;	
+	}
+	#sharing {
+		top:10px;
+		float:right;
+		position: relative;	
+		height:50px;
+		width:100%;
+	}
+	.shareTxt {
+		color: #ffffff;
+		font-size:4.5vw;
+		float:right;
+		text-align:center;
+		position: relative;
+		width:20%;
+	}
+	.shareLine {
+		top: 8px;
+		float:right;
+		position: relative;
+		/*display:inline;*/
+		height:1px;
+		background-color:#FFFFFF;
+		width:40%;
+	}
+	
+	#sharingBtns {
+		position: relative;
+		top:10px;
+		margin: 0 auto;
+		width:200px;
+		height: 40px;
 	}
 	.sharingCircle {
 		position: relative;
@@ -2069,5 +3740,231 @@ input:focus {
 		background-position: center;
 		background-repeat: no-repeat;
     	background-image: url(../img/email.png);
+	}
+	
+	#bOpenConc #shaulAll {
+	    top: 10px; 
+	    margin: auto;
+	    position: relative;
+	    width: 120px;
+	}
+	
+	#bOpenConc #shauPic {
+	    background-image: url(../img/shaul_small.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 140px;
+	    width: 120px;
+	}
+	
+	#bOpenConc #left {
+	    width: 100%;
+	}
+	
+	#bOpenConc #right {
+	    width: 100%;
+	}
+	
+	#bOpenConc #entrance {
+		text-align: justify;
+		margin: auto;
+	    direction: rtl;
+	    top: 50px;
+	    font-family: 'poeti';
+	    font-size: 25px;
+	    position: relative;
+	    width: 100%;
+	    color: #FFFFFF;
+	}
+	
+	#bOpenConc #entrance p {
+		margin: 0 auto;
+		position: relative;
+		width:90%;
+		color:#FFFFFF;
+		text-align:justify;
+		letter-spacing:-1.5px;	
+		font-size:7vw;
+		min-height:175px;
+		
+	}
+	
+	#bOpenConc #btnbg_start {
+		position: relative;
+		width:90%;
+		box-shadow: 0 8px 6px -6px #434141;
+	}
+	
+	#bOpenConc #btnbg_start p {
+		font-size: 25px;
+	    padding-top: 14px;
+	}
+	
+	/* about page style for mobile */
+	#about {
+		background:#24A499;
+	}
+	
+	#about #line {
+		position: relative;
+		text-decoration: none;
+		margin-right:10px;
+		margin-left:10px;
+		margin-top:2px;
+		cursor:default;
+	}
+	
+	#about #aboutLink {
+		display:block;
+		width:100%;
+		height:30px;
+		position: relative;
+	    margin: auto;
+	    direction: rtl;
+	    color:#ffffff;
+	}
+	
+	#about a {
+		position: relative;
+		top: 30px;
+		font-family: 'poeti';
+		float: left;
+	    font-size: 5vw;
+	    color: #FFFFFF;
+		left: 35%;
+		letter-spacing:-1px;
+	}
+	
+	#about #wrapper {
+		position: relative;
+		margin: 0 auto;
+		top:20px;
+		width: 100%;
+	}
+	
+	#about #piniContainer {
+		display:none;
+	}
+	
+	#about #pini { }
+	
+	#about #aboutWrapper {
+		float:right;
+		width: 100%;
+	}
+	
+	#aboutWrapper #aboutBox {
+		position: relative;
+		margin: 0 auto;
+		top:10px;
+		background:#ffffff;
+		width:95%;
+		min-height:400px;
+		border-radius:10px;
+	}
+	
+	#aboutBox #boxArrow {
+		display:none;
+	}
+	
+	#shenkar {
+		position: relative;
+		float: right;
+		top:15px;
+		background-image: url(../img/shenkar.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 31px;
+	    width: 105px;
+	}
+	
+	#calcalist {
+		position: relative;
+		float: left;
+		top:19px;
+		background-image: url(../img/calcalist.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    height: 27px;
+	    width: 109px;
+	}
+	
+	#aboutBox h1 {
+		position: relative;
+		top:5px;
+		right:10%;
+		color:#BF1067;
+		font-size:6vw;
+		direction: rtl;
+		text-align:right;
+		line-height:40px;
+		font-family:'poeti-bold';
+	}
+	
+	#aboutBox p {
+		position: relative;
+		margin: 0 auto;
+		top:5px;
+		min-height: 300px;
+		width: 90%;
+		color: #BF1067;
+		font-family: 'poeti';
+		direction:rtl;
+		text-align:justify;
+		font-size:15px;
+	}
+	
+	#aboutBox #logos {
+		padding-top:5px;
+		padding-bottom:5px;
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		bottom:0;
+		height: 49px;
+	}
+	#aboutWrapper #sharing {
+		position: relative;	
+		margin:0 auto;
+		top:20px;
+		right:2%;
+		height:50px;
+		width:95%;
+	}
+	#aboutWrapper .shareTxt {
+		color: #ffffff;
+		font-size:2.3vw;
+		float:right;
+		text-align:center;
+		position: relative;
+		font-family:'poeti';
+		width:10%;
+	}
+	#aboutWrapper .shareLine {
+		top: 7px;
+		float:right;
+		position: relative;
+		/*display:inline;*/
+		height:1px;
+		background-color:#FFFFFF;
+		width:45%;
+	}
+	
+	#aboutWrapper #sharingBtns {
+		position: relative;
+		top:10px;
+		margin: 0 auto;
+		width:160px;
+		height: 40px;
+	}
+	#aboutWrapper .sharingCircle {
+		width:45px;
+		height: 45px;
+	}
+	
+	#bIndex h1 {
+		width: 100%;
+		font-size: 14vw;
+		letter-spacing: -3px;
 	}
 }

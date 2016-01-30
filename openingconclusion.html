@@ -3,28 +3,39 @@
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="includes/style.css">
+		<!-- jQuery library -->
+		<script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
+		
+		<!-- controller and calculator scripts -->
+		<script type="text/javascript" src="includes/controller.js"></script>
 		<title>כשתהיו בני 67</title>
 	</head>
 	<body id="bOpenConc">
 		<header>
 			<nav class="oNav">
-				<a href="contact.html">איך הגענו לזה?</a>
+				<a href="about.html?ref=openingconclusion">איך הגענו לזה?</a>
 			</nav>
 		</header>
 		<main>
-			<section id="right">
-				<section id="shaulAll">
-					<section id="shauPic"></section>
-					<section id="shaulTxt"></section>
+			<section id="wrapper">
+				<section id="piniContainer">
+					<div id="pini"></div>
 				</section>
-		   </section>
-		   <section id="left">
-
-				<section id="entrance">רוצים לדעת מה באמת תהיה הפנסיה שלכם?</section>
-				<section id="presentation">"כלכליסט" ושנקר מגישים לכם - מחשבון הפנסיה האמיתי</section>
-				<section id="btnback_start"><section>התחל</section></section>
-				<section id="lower_text">אחרי שתענו על מספר שאלות קצרות תוכלו "לשחק" עם ההנחות הסמויות שמאחורי החיסכון לגיל הפרישה שלכם ולגלות איך כל אחת מהן משפיעה עליו.</section>
+				<section id="aboutWrapper">
+					<section id="entrance">
+						<p>
+							אחרי שאספנו את כל הנתונים הדרושים, אתם מוזמנים לבדוק מה באמת יהיה גובה הפנסיה החודשית שלכם. תוכלו "לשחק" עם ההנחות הסמויות שמאחורי המספר הזה ולגלות איך הן משפיעות עליו.	
+						</p>	
+					</section>
+					<section id="btnbg_start"><p>למחשבון הפנסיוני</p></section>
+				</section>
+				<div class="clear"></div>
 			</section>
 		</main>
+		<script>
+			(function() {
+				attachBtnEvent();
+			})();
+		</script>
 	</body>
 </html>

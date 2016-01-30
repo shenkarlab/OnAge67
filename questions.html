@@ -2,37 +2,96 @@
 <html>
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width">
-		<!-- css stylesheet -->
 		<link rel="stylesheet" href="includes/style.css">
 		<!-- jQuery library -->
-		<script src="includes/jquery-2.1.4.min.js"></script>
-		<!-- javascript code -->
+		<script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="includes/controller.js"></script>
-
 		<title>כשתהיו בני 67</title>
 	</head>
-	<body id="questions">
-		<header>
-			<nav>
-				<section id="links">
-					<a href="contact.html"><img src="img/contact.jpg"></a>
-					<img src="img/sep.jpg">
-					<a href="about.html"><img src="img/about.jpg"></a>
-				</section>
+	<body id="bQuestions">
+		<section id="right">
+			<nav class="oNavRight">
+				<a href="about.html?ref=questions">איך הגענו לזה?</a>
 			</nav>
-		</header>
-		<main>
-			<section id="q_wrapper"><section id="question"></section></section>
-			<section id="icon"></section>
-			<section id="user_input"></section>
-			<section id="next_btn"></section>
-			<section id="circles"></section>
-		</main>
-		<footer>	
-		</footer>	
+			<section id="topRight">
+				<section class="topRightTxt">
+					<p>המגדר משפיע מהותית על הפנסיה. נשים פורשות בגיל 62 (גברים בגיל 67) וגם חיות יותר שנים. לכן הפנסיה שלהן קטנה יותר.</p>
+				</section>
+				<section id="arrow" class="whiteArrow"></section>
+				<div class="clear"></div>
+			</section>
+			<section id="shaulAll">
+				<section id="shauPic"></section>
+			</section>
+		</section>
+		<section id="left">
+			<nav class="oNav">
+				<a href="about.html?ref=questions">איך הגענו לזה?</a>
+			</nav>
+			<section id="wrapper">
+				<section id="gender" class="questionWrapper">
+					<section id="genders">
+						<!-- <section class="genderBorderFemale"><section id="female"></section></section>
+						<section class="genderBorderMale"><section id="male"></section></section> -->
+						<section id="female"></section>
+						<section id="male"></section>
+						<div class="clear"></div>
+					</section>
+				</section>
+				<section class="hrLine"></section>
+				<section id="preYears" class="questionWrapper">
+					<p>כמה שנים אתם חוסכים לפנסיה?</p>
+					<section class="inputWrapper">
+						<section id="innerBtnContainer">
+							<section class="innerBtnLeft" id="years">
+								שנים
+							</section>
+							<section class="innerBtnRightYears">
+								<input id="innerBtnYears" type="number">
+								<div id="inputLineYears"></div>
+							</section>
+						</section>
+					</section>
+				</section>
+				<section class="hrLine"></section>
+				<section id="salary" class="questionWrapper">
+					<p>מהי ההכנסה החודשית שלכם?</p>
+					<section class="inputWrapper">
+						<section id="innerBtnContainer">
+							<section class="innerBtnLeft">
+								&#8362;
+							</section>
+							<section class="innerBtnRight">
+								<input class="innerBtnMoney" id="salaryInput" type="number">
+								<div id="inputLineMoney"></div>
+							</section>
+						</section>
+					</section>
+				</section>
+				<section class="hrLine"></section>
+				<section id="assumption" class="questionWrapper">
+				<p id="assumptionQuestion">נסו לנחש,<br>מה תהיה הפנסיה החודשית שלכם?</p>
+					<section class="inputWrapper">
+						<section id="innerBtnContainer">
+							<section id="innerBtnContainer">
+							<section class="innerBtnLeft">
+								&#8362;
+							</section>
+							<section class="innerBtnRight">
+								<input class="innerBtnMoney" id="assumptionInput" type="number">
+								<div id="inputLineMoney"></div>
+							</section>
+						</section>
+						</section>
+					</section>
+				</section>
+				<section class="hrLine"></section>
+				<section id="btnback_start"><p>המשך</p></section>
+			</section>
+		</section>
 		<script>
 			(function() {
-				setScreen();
+				questionsValidator();
 			})();
 		</script>
 	</body>
